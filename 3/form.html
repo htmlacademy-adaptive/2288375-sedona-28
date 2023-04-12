@@ -10,7 +10,7 @@
 <body class="page__body">
   <header class="main-header">
     <a class="main-header__logo" href="#">
-      <img src="./img/logo-phone.svg" width="185px" height="96px" alt="Седона">
+      <img src="./img/logo-phone.svg" width="185" height="96" alt="Седона">
     </a>
     <nav class="main-nav">
       <button class="main-nav__toggle" type="button">
@@ -18,15 +18,13 @@
       </button>
       <div class="main-nav__wrapper">
         <ul class="main-nav__list site-list">
-          <li class="site-list__item--active">
+          <li class="site-list__item">
             <a href="#">Главная</a>
           </li>
           <li class="site-list__item">
             <a href="#">Фото и видео</a>
           </li>
-        </ul>
-        <ul class="main-nav__list user-list">
-          <li class="site-list__item">
+          <li class="site-list__item site-list__item--active">
             <a href="#">Форма отзыва</a>
           </li>
           <li class="site-list__item">
@@ -42,30 +40,31 @@
     <img class="welcome" src="./img/back-mobile.jpg@2x.jpg" alt="Sedona!">
   </section>
   <main class="main-container">
-    <h2 class="visually-hidden">Отзывы.</h2>
+    <h1 class="visually-hidden">Отзывы.</h1>
     <section class="review">
+      <form class="review__form" action="#" method="get">
       <div class=" review__wrapper">
         <h2 class="review__intro-title-form">Оставьте свой отзыв</h2>
         <p class="review__intro-description-form">Помогите нашим отелям стать лучше! оставьте отзыв о
           них, а также о посещенных вами достопримечательностях</p>
-        <h2 class="about-me__title">Представьтесь:</h2>
+        <h2 class="review__title">Представьтесь:</h2>
         <label class="review__label label">ИМЯ*:
           <input name="review__name" class="input" value="Пётр" type="text">
         </label>
         <label class="review__label label">ФАМИЛИЯ*:
-          <input name="review__name" class="input" value="Пустота" type="text">
+          <input name="review__Surname" class="input" value="Пустота" type="text">
         </label>
         <label class="review__label label">Отчество:
-          <input name="review__name" class="input" value="Викторович" type="text">
+          <input name="review__Surname-father" class="input" value="Викторович" type="text">
         </label>
       </div>
       <div class="contact">
-        <h2 class="contact-info__title">Контактная информация:</h2>
+        <h2 class="contact__title">Контактная информация:</h2>
         <label class="contact__label label">Контактный телефон*:
-          <input name="contact__info" class="input" value="Введите телефон" type="number">
+          <input name="contact__info-tel" class="input" value="Введите телефон" type="text">
         </label>
         <label class="contact__label label">Электронная почта*:
-          <input name="contact__info" class="input" value="Введите e-mail" type="email">
+          <input name="contact__info-email" class="input" value="Введите e-mail" type="text">
         </label>
       </div>
       <div class="impression">
@@ -73,19 +72,19 @@
         <ul class="impression__filter-list">
           <li class="impression__filter-item">
             <label class="impression__control">
-              <input class="impression__control-input" type="radio" name="mark" checked>
+              <input class="impression__control-input" type="radio" name="mark" value="positive" checked>
               <span class="impression__mark">Скорее положительное</span>
             </label>
           </li>
           <li class="impression__filter-item">
             <label class="impression__control">
-              <input class="impression__control-input" type="radio" name="mark">
+              <input class="impression__control-input" type="radio" name="mark" value="negative">
               <span class="impression__mark">Скорее отрицательное</span>
             </label>
           </li>
           <li class="impression__filter-item">
             <label class="impression__control">
-              <input class="impression__control-input" type="radio" name="mark">
+              <input class="impression__control-input" type="radio" name="mark" value="difficulty">
               <span class="impression__mark">Затрудняюсь ответить</span>
             </label>
           </li>
@@ -96,38 +95,39 @@
         <ul class="visit__filter-list">
           <li class="visit__filter-item">
             <label class="visit__control">
-              <input class="visit__control-input" type="checkbox" name="mark" checked>
+              <input class="visit__control-input" type="checkbox" name="devil" checked>
               <span class="visit__mark">Мост Дьявола</span>
             </label>
           </li>
           <li class="visit__filter-item">
             <label class="visit__control">
-              <input class="visit__control-input" type="checkbox" name="mark" checked>
+              <input class="visit__control-input" type="checkbox" name="bell" checked>
               <span class="visit__mark">Гора-Колокол</span>
             </label>
           </li>
           <li class="visit__filter-item">
             <label class="visit__control">
-              <input class="visit__control-input" type="checkbox" name="mark" checked>
+              <input class="visit__control-input" type="checkbox" name="park" checked>
               <span class="visit__mark">Слайд-парк</span>
             </label>
           </li>
           <li class="visit__filter-item">
             <label class="visit__control">
-              <input class="visit__control-input" type="checkbox" name="mark">
+              <input class="visit__control-input" type="checkbox" name="rocks">
               <span class="visit__mark">Красные скалы</span>
             </label>
           </li>
         </ul>
       </div>
       <div class="comment">
-        <h2 class="comment__title">Опишите свои эмоции:</h2>
+        <textarea class="comment__title">Опишите свои эмоции:</textarea>
         <label class="comment__label label">
           <input name="comment__info" class="input" value="Опишите подробно все свои восторги" type="text">
         </label>
       </div>
-      <a class="review button" href="#">ОТПРАВИТЬ ОТЗЫВ</a>
+      <button class="review button" type="submit">ОТПРАВИТЬ ОТЗЫВ</button>
       <p class="review__description">* — обязательные поля</p>
+    </form>
     </section>
   </main>
 
@@ -137,7 +137,7 @@
         <h3>#visitSEDONA</h3>
       </div>
       <div class="main-footer__social social">
-        <ul class="site__list">
+        <ul class="social__list">
           <li class="social__item">
             <a class="social__link social__link--vkontakte" href="https://vk.com/htmlacademy">Мы в Вконтакте</a>
           </li>
@@ -156,7 +156,6 @@
           <img class="icon-htmlacademy" src="#" alt="иконка штмл академии.">
         </a>
       </div>
-    </div>
     </div>
   </footer>
 </body>
