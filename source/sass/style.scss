@@ -1,1 +1,22 @@
-// Начните писать стили здесь
+//микмины и переменные
+@import './mixins.scss';
+@import './variables.scss';
+
+// базовые стили
+@import './base/fonts.scss';
+@import './base/base.scss';
+
+//блоки
+@import './blocks/page-body.scss';
+@import './blocks/main-header.scss';
+@import './blocks/main-container.scss';
+@import './blocks/main-footer.scss';
+@import './blocks/social.scss';
+@import './blocks/buttons.scss';
+@import './blocks/review.scss';
+@import './blocks/contact.scss';
+@import './blocks/impression.scss';
+@import './blocks/visit.scss';
+@import './blocks/comment.scss';
+@import './blocks/photo.scss';
+
