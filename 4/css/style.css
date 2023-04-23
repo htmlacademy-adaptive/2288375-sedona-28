@@ -1,7 +1,7 @@
 @font-face {
   font-family: "PT Sans";
   src: url("../fonts/ptsans.woff2") format("woff2");
-  src: url("../fonts/ptsans.woff") format("woff2");
+  src: url("../fonts/ptsans.woff") format("woff");
   font-style: normal;
   font-weight: 400;
   font-display: swap;
@@ -39,14 +39,6 @@ img {
   overflow: hidden;
 }
 
-.page__body {
-  min-height: 100%;
-  margin: 0;
-  background-color: #ffffff;
-  color: #000000;
-  font-family: "PT Sans", "Arial", sans-serif;
-}
-
 .main-header__logo {
   margin-right: 291px;
 }
@@ -73,6 +65,7 @@ img {
   color: #FFFFFF;
   text-decoration: none;
   border-color: #81B3D2;
+  font-family: "PT Sans";
 }
 
 .review__intro-title-form {
@@ -111,7 +104,7 @@ img {
   font-size: 12px;
   line-height: 21px;
   text-transform: uppercase;
-  color: #333333;
+  color: rgba(51, 51, 51, 0.6);
 }
 
 .contact__title {
@@ -167,6 +160,7 @@ img {
   font-size: 18px;
   line-height: 26px;
   color: rgba(0, 0, 0, 0.3);
+  font-family: "PT Sans";
 }
 
 .photo__heading-title-catalog {
@@ -261,6 +255,14 @@ img {
   line-height: 21px;
 }
 
+.page__body {
+  min-height: 100%;
+  margin: 0;
+  background-color: #ffffff;
+  color: #000000;
+  font-family: "PT Sans", "Arial", sans-serif;
+}
+
 .advantages__intro-title {
   font-weight: 700;
   font-size: 18px;
@@ -315,7 +317,7 @@ img {
 
 .search__title {
   font-weight: 700;
-  font-size: 30px;
+  font-size: 21px;
   line-height: 26px;
   text-transform: uppercase;
   color: #000000;
@@ -323,8 +325,8 @@ img {
 
 .search__description {
   font-weight: 400;
-  font-size: 21px;
-  line-height: 26px;
+  font-size: 14px;
+  line-height: 21px;
   text-transform: uppercase;
   color: #333333;
 }
@@ -377,11 +379,13 @@ img {
   color: #FFFFFF;
   text-decoration: none;
   border-color: #81B3D2;
+  font-family: "PT Sans";
 }
 
 .input {
   font-weight: 700;
   font-size: 18px;
   line-height: 26px;
+  font-family: "PT Sans";
 }
 /*# sourceMappingURL=style.css.map */
