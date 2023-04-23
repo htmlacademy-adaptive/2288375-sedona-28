@@ -8,18 +8,23 @@
 
 .photo__heading-description-catalog {
   font-weight: 400;
-  font-size: 18px;
-  line-height: 26px;
+  font-size: 14px;
+  line-height: 21px;
   text-transform: uppercase;
   color: #333333;
 }
 
-.photo__photo-card {
+.photo__link{
+  text-decoration: none;
+}
+
+.photo__name {
   font-weight: 700;
   font-size: 14px;
   line-height: 21px;
   text-transform: uppercase;
   color: #000000;
+
 }
 
 .photo__title {
@@ -46,8 +51,8 @@
 
 .photo__photo-description-catalog{
   font-weight: 400;
-  font-size: 21px;
-  line-height: 26px;
+  font-size: 14px;
+  line-height: 21px;
   text-transform: uppercase;
   color: #333333;
 }
