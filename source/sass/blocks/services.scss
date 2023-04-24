@@ -1,0 +1,27 @@
+.services {
+  background-color: #EEEEEE;
+  margin: 0;
+}
+.services__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.services__title {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 26px;
+  text-transform: uppercase;
+  color: #000000;
+
+}
+
+.services__description {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
+  text-transform: uppercase;
+  color: #333333;
+
+}

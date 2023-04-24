@@ -1,0 +1,23 @@
+.main-nav {
+  width: 100%;
+  background-color: #ffffff;
+}
+
+.main-nav__wrapper {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 21px;
+
+}
+
+.main-nav__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.main-nav__list a {
+  color: #000000;
+  text-transform: uppercase;
+  text-decoration: none;
+}
