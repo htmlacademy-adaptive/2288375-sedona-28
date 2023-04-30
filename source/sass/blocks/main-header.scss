@@ -1,4 +1,37 @@
 .main-header__logo {
-margin-right: 291px;
+  height: 96px;
+  margin: 0 auto;
+
+  @media (min-width: $desktop-width) {
+    position: absolute;
+    top: 0;
+    left: calc(50% - 92.5px);
+  }
 }
+
+.main-header {
+  display: flex;
+  flex-wrap: wrap;
+  position: relative;
+}
+
+.main-nav__wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  @media (min-width: $tablet-width) {
+    margin: auto;
+    max-width: 768px;
+    display: flex;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: auto;
+    max-width: 1200px;
+    display: flex;
+  }
+
+}
+
 

@@ -3,4 +3,35 @@
   font-size: 21px;
   line-height: 26px;
   text-transform: uppercase;
+  width: 136px;
+  margin: 51 auto;
+}
+
+.social__list {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  list-style-type: none;
+  }
+
+.main-footer__wrapper {
+  margin: 0;
+
+@media (min-width: $tablet-width) {
+  margin: auto;
+  max-width: 768px;
+  display: flex;
+}
+
+@media (min-width: $desktop-width) {
+  margin: auto;
+  max-width: 1200px;
+  display: flex;
+}
+}
+
+.main-footer__copyright {
+  margin: auto;
+  width: 129px;
 }

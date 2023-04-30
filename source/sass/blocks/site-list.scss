@@ -1,0 +1,7 @@
+.site-list {
+  &__item {
+    @media (min-width: $desktop-width) {
+      width: 25%;
+    }
+  }
+}

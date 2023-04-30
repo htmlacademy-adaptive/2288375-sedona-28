@@ -1,11 +1,26 @@
 .services {
-  background-color: #EEEEEE;
+  background-color: #FFFFFF;
   margin: 0;
 }
 .services__list {
   margin: 0;
   padding: 0;
   list-style: none;
+
+  @media (min-width: $tablet-width) {
+    margin: auto;
+    max-width: 768px;
+    display: grid;
+    grid-template-columns: 256px 256px 256px;
+    height: 331px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: auto;
+    max-width: 1200px;
+    display: grid;
+    grid-template-columns:  400px 400px 400px;
+  }
 }
 
 .services__title {
@@ -23,5 +38,8 @@
   line-height: 21px;
   text-transform: uppercase;
   color: #333333;
+}
 
+.services__item {
+  padding: 5px 10px;
 }
