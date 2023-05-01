@@ -3,10 +3,37 @@
     font-size: 18px;
     line-height: 26px;
     text-transform: uppercase;
+
+    @media (min-width: $tablet-width) {
+      margin-top: 63px;
+    }
+
+    @media (min-width: $desktop-width) {
+      margin-top: 71px;
+    }
   }
 
   .impression__mark {
     font-weight: 700;
     font-size: 18px;
     line-height: 26px;
+  }
+
+  .impression {
+    text-align: center;
+  }
+
+  .impression__filter-list {
+
+    @media (min-width: $tablet-width) {
+      display: grid;
+      grid-template-columns:280px 280px ;
+      width: $tablet-width;
+    }
+
+    @media (min-width: $desktop-width) {
+      display: grid;
+      grid-template-columns:280px 280px 280px;
+      width: $desktop-width;
+    }
   }

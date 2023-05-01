@@ -37,6 +37,13 @@
   padding: 0;
   list-style: none;
 
+  @media (min-width: $tablet-width) {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: space-between;
+  }
+
   @media (min-width: $desktop-width) {
     display: flex;
     flex-wrap: wrap;
@@ -50,6 +57,13 @@
   color: #000000;
   text-transform: uppercase;
   text-decoration: none;
+
+  @media (min-width: $tablet-width) {
+    padding: 18px 27px 17px 28px;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+  }
 
   @media (min-width: $desktop-width) {
     padding: 18px 27px 17px 28px;
