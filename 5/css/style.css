@@ -296,20 +296,21 @@ img {
 
 .impression {
   text-align: center;
+  margin-left: 150px;
 }
 
 @media (min-width: 768px) {
   .impression__filter-list {
     display: grid;
     grid-template-columns: 280px 280px;
-    width: 768px;
+    width: 668px;
   }
 }
 @media (min-width: 1200px) {
   .impression__filter-list {
     display: grid;
     grid-template-columns: 280px 280px 280px;
-    width: 1200px;
+    width: 1100px;
   }
 }
 
@@ -344,14 +345,14 @@ img {
   .visit__filter-list {
     display: grid;
     grid-template-columns: 224px 224px;
-    width: 768px;
+    width: 668px;
   }
 }
 @media (min-width: 1200px) {
   .visit__filter-list {
     display: grid;
     grid-template-columns: 172px 172px 172px 172px;
-    width: 1200px;
+    width: 1100px;
   }
 }
 
@@ -368,6 +369,7 @@ img {
   line-height: 26px;
   color: rgba(0, 0, 0, 0.3);
   font-family: "PT Sans";
+  width: 279px;
 }
 
 .comment {
@@ -416,6 +418,10 @@ img {
   }
 }
 
+.photo__list {
+  padding: 0;
+  min-height: 200px;
+}
 @media (min-width: 768px) {
   .photo__list {
     margin: auto;
@@ -933,6 +939,15 @@ img {
 @media (min-width: 1200px) {
   .container {
     width: 1200px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .container-shadow {
+    width: 1280;
+    max-width: 100%;
+    margin-left: auto;
+    margin-right: auto;
   }
 }
 /*# sourceMappingURL=style.css.map */
