@@ -1,0 +1,8 @@
+.container-shadow {
+  @media (min-width: $desktop-width) {
+    width: 1280;
+    max-width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}

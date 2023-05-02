@@ -21,6 +21,7 @@
 
   .impression {
     text-align: center;
+    margin-left: 150px;
   }
 
   .impression__filter-list {
@@ -28,12 +29,12 @@
     @media (min-width: $tablet-width) {
       display: grid;
       grid-template-columns:280px 280px ;
-      width: $tablet-width;
+      width: 668px;
     }
 
     @media (min-width: $desktop-width) {
       display: grid;
       grid-template-columns:280px 280px 280px;
-      width: $desktop-width;
+      width: 1100px;
     }
   }
