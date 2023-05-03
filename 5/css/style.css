@@ -424,19 +424,18 @@ img {
 }
 @media (min-width: 768px) {
   .photo__list {
-    margin: auto;
     width: 768px;
     display: grid;
     grid-template-columns: 324px 324px;
-    height: 331px;
+    padding: 0 60px 0 60px;
   }
 }
 @media (min-width: 1200px) {
   .photo__list {
-    margin: auto;
     width: 1200px;
     display: grid;
     grid-template-columns: 400px 400px 400px;
+    padding: 0;
   }
 }
 
@@ -487,7 +486,7 @@ img {
 }
 @media (min-width: 768px) {
   .photo__photo-title-catalog {
-    margin-top: 250px;
+    margin-top: 58px;
   }
 }
 @media (min-width: 1200px) {
@@ -844,9 +843,6 @@ img {
 @media (min-width: 1200px) {
   .main-nav__list {
     display: flex;
-    flex-wrap: wrap;
-    width: 100%;
-    justify-content: space-between;
   }
 }
 
@@ -857,7 +853,7 @@ img {
 }
 @media (min-width: 768px) {
   .main-nav__list a {
-    padding: 18px 27px 17px 28px;
+    padding: 18px 10px 17px 10px;
     box-sizing: border-box;
     display: flex;
     justify-content: center;
@@ -865,10 +861,7 @@ img {
 }
 @media (min-width: 1200px) {
   .main-nav__list a {
-    padding: 18px 27px 17px 28px;
-    box-sizing: border-box;
-    display: flex;
-    justify-content: center;
+    padding: 18px 17px 17px 18px;
   }
 }
 
@@ -896,32 +889,25 @@ img {
   font-family: "PT Sans";
 }
 
-.hero {
-  margin: auto;
-  object-position: 60 40;
-  object-fit: fill;
-}
-@media (min-width: 768px) {
-  .hero {
-    margin: auto;
-    width: 768px;
-  }
-}
-@media (min-width: 1200px) {
-  .hero {
-    margin: auto;
-    width: 1200px;
-  }
-}
-
 .map {
   margin: auto;
   width: 320px;
 }
 
+@media (min-width: 768px) {
+  .site-list__item {
+    width: 153px;
+  }
+  .site-list__item:nth-child(2) {
+    margin-right: 153px;
+  }
+}
 @media (min-width: 1200px) {
   .site-list__item {
-    width: 25%;
+    width: 240px;
+  }
+  .site-list__item:nth-child(2) {
+    margin-right: 240px;
   }
 }
 
@@ -942,12 +928,19 @@ img {
   }
 }
 
+.container-shadow {
+  width: 320px;
+  margin: 0 auto;
+  outline: 1px solid red;
+}
+@media (min-width: 768px) {
+  .container-shadow {
+    width: 768px;
+  }
+}
 @media (min-width: 1200px) {
   .container-shadow {
-    width: 1280;
-    max-width: 100%;
-    margin-left: auto;
-    margin-right: auto;
+    width: 1200px;
   }
 }
 /*# sourceMappingURL=style.css.map */
