@@ -19,6 +19,7 @@
   font-size: 18px;
   line-height: 26px;
   text-transform: uppercase;
+  text-align: center;
 }
 
 .review__label {
@@ -35,6 +36,59 @@
   line-height: 21px;
   text-transform: uppercase;
   color: rgba(51, 51, 51, 0.6);
+  text-align: right;
 }
 
+.review__intro {
+  text-align: center;
 
+  @media (min-width: $tablet-width) {
+    margin: auto;
+    width: $tablet-width;
+    margin-top: 64px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: auto;
+    width: $desktop-width;
+    margin-top: 115px;
+  }
+}
+
+.review__container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin: 0 15px;
+}
+
+.review__label {
+  display: flex;
+  flex-direction: column;
+}
+
+.review__wrapper {
+  @media (min-width: $tablet-width) {
+    display: flex;
+    margin-top: 108px;
+  }
+}
+
+.review_send {
+  @media (min-width: $tablet-width) {
+    display: flex;
+    margin: auto;
+    width: $tablet-width;
+    margin-top: 48px;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: flex;
+    margin: auto;
+    width: $desktop-width;
+    margin-top: 64px;
+    text-align: center;
+  }
+
+}

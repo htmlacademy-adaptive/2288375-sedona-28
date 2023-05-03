@@ -3,10 +3,36 @@
   font-size: 18px;
   line-height: 26px;
   text-transform: uppercase;
+
+  @media (min-width: $tablet-width) {
+    margin-top: 58px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-top: 73px;
+  }
 }
 
 .visit__mark {
   font-weight: 700;
   font-size: 18px;
   line-height: 26px;
+}
+
+.visit {
+  text-align: center;
+}
+
+.visit__filter-list {
+  @media (min-width: $tablet-width) {
+    display: grid;
+    grid-template-columns:224px 224px ;
+    width: 668px;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: grid;
+    grid-template-columns:172px 172px 172px 172px;
+    width: 1100px;
+  }
 }

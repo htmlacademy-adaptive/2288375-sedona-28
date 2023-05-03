@@ -3,11 +3,13 @@
 
 <head>
   <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Форма</title>
   <link rel="stylesheet" href="./css/style.css">
 </head>
 
 <body class="page__body">
+  <div class="container-shadow">
   <header class="main-header">
     <a class="main-header__logo" href="index.html">
       <img src="./img/logo-phone.svg" width="185" height="96" alt="Седона">
@@ -37,27 +39,30 @@
 
   <section class="hero">
     <h2 class="visually-hidden">Седона</h2>
-    <img class="welcome" src="./img/back-mobile.jpg@2x.jpg" alt="Sedona!">
+    <img class="welcome" src="./img/intro.jpg" alt="Sedona!">
   </section>
   <main class="main-container">
     <h1 class="visually-hidden">Отзывы.</h1>
     <section class="review">
       <form class="review__form" action="#" method="get">
-        <div class=" review__wrapper">
+        <div class="review__intro">
           <h2 class="review__intro-title-form">Оставьте свой отзыв</h2>
           <p class="review__intro-description-form">Помогите нашим отелям стать лучше! оставьте отзыв о
             них, а также о посещенных вами достопримечательностях</p>
-          <h2 class="review__title">Представьтесь:</h2>
-          <label class="review__label label">ИМЯ*:
-            <input name="review__name" class="input" value="Пётр" type="text">
-          </label>
-          <label class="review__label label">ФАМИЛИЯ*:
-            <input name="review__Surname" class="input" value="Пустота" type="text">
-          </label>
-          <label class="review__label label">Отчество:
-            <input name="review__Surname-father" class="input" value="Викторович" type="text">
-          </label>
         </div>
+        <div class=" review__wrapper">
+          <div class="review__container">
+            <h2 class="review__title">Представьтесь:</h2>
+            <label class="review__label label">ИМЯ*:
+              <input name="review__name" class="input" value="Пётр" type="text">
+            </label>
+            <label class="review__label label">ФАМИЛИЯ*:
+              <input name="review__Surname" class="input" value="Пустота" type="text">
+            </label>
+            <label class="review__label label">Отчество:
+              <input name="review__Surname-father" class="input" value="Викторович" type="text">
+            </label>
+          </div>
         <div class="contact">
           <h2 class="contact__title">Контактная информация:</h2>
           <label class="contact__label label">Контактный телефон*:
@@ -67,6 +72,7 @@
             <input name="contact__info-email" class="input" value="Введите e-mail" type="email">
           </label>
         </div>
+      </div>
         <div class="impression">
           <h2 class="impression__title">Ваше Общее впечатление:</h2>
           <ul class="impression__filter-list">
@@ -125,8 +131,10 @@
             <textarea class="comment__info" id="#" cols="30" rows="10">Опишите подробно все свои восторги</textarea>
           </label>
         </div>
-        <button class="review button" type="submit">ОТПРАВИТЬ ОТЗЫВ</button>
+        <div class="review_send">
+        <button class="review__button button" type="submit">ОТПРАВИТЬ ОТЗЫВ</button>
         <p class="review__description">* — обязательные поля</p>
+      </div>
       </form>
     </section>
   </main>
@@ -158,6 +166,7 @@
       </div>
     </div>
   </footer>
+</div>
 </body>
 
 
