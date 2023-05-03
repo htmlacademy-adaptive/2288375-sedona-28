@@ -1,17 +1,2 @@
-.hero {
-  margin: auto;
-  object-position: 60 40;
-  object-fit: fill;
-
-  @media (min-width: $tablet-width) {
-    margin: auto;
-    width: 768px;
-  }
-
-  @media (min-width: $desktop-width) {
-    margin: auto;
-    width: 1200px;
-  }
-}
 
 

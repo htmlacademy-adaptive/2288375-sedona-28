@@ -1,7 +1,17 @@
-.site-list {
-  &__item {
-    @media (min-width: $desktop-width) {
-      width: 25%;
+
+.site-list__item {
+  @media (min-width: $tablet-width) {
+    width: 153px;
+    &:nth-child(2) {
+      margin-right: 153px ;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 240px;
+    &:nth-child(2) {
+      margin-right: 240px ;
     }
   }
 }
+
