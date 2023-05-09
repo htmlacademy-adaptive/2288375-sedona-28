@@ -14,8 +14,9 @@
     <a class="main-header__logo" href="index.html">
       <img src="./img/logo-phone.svg" width="185" height="96" alt="Седона">
     </a>
-    <nav class="main-nav">
+    <nav class="main-nav main-nav--nojs">
       <button class="main-nav__toggle" type="button">
+        <span class="main-nav__toggle-icon"></span>
         <span class="visually-hidden">Открыть меню.</span>
       </button>
       <div class="main-nav__wrapper">
@@ -39,7 +40,11 @@
 
   <section class="hero">
     <h2 class="visually-hidden">Седона</h2>
-    <img class="welcome" src="./img/intro.jpg" alt="Sedona!">
+    <picture>
+      <source srcset="./img/intro.jpg" media="(min-width: 1200px)">
+      <source srcset="./img/Intro-tablet.jpg" media="(min-width: 768px)">
+      <img class="welcome" src="./img/back-mobile.jpg" alt="Welcome To the Gorgeous Sedona Because the Grand Canyon Sucks!">
+    </picture>
   </section>
   <main class="main-container">
     <h1 class="visually-hidden">Отзывы.</h1>
@@ -167,6 +172,7 @@
     </div>
   </footer>
 </div>
+<script src="./js/main.js"></script>
 </body>
 
 

@@ -2,3 +2,11 @@
   margin: auto;
   width: 320px;
 }
+
+.map__image {
+  margin-top: 55px;
+
+  @media (min-width: $tablet-width) {
+    margin-top: 55px;
+  }
+}

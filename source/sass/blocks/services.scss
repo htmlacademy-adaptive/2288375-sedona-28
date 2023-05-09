@@ -29,7 +29,95 @@
   line-height: 26px;
   text-transform: uppercase;
   color: #000000;
+  position: relative;
+  margin: 0 auto;
 
+  @media (min-width: $tablet-width) {
+    margin-top: 26px;
+  }
+
+}
+
+.services__item--housing {
+  position: relative;
+}
+
+.services__item--housing::after {
+  content: "";
+  position: absolute;
+  background-image: url("../img/home-icon.svg");
+  background-repeat: no-repeat;
+  background-size: auto;
+  width: 40px;
+  height: 40px;
+  top: 0;
+  left: 0;
+  margin-top: 23px;
+  margin-left: 18px;
+
+  @media (min-width: $tablet-width) {
+    position: static;
+    display: block;
+    order: -1;
+    margin: 0 auto;
+  }
+}
+.services__item--food {
+  position: relative;
+
+  @media (min-width: $tablet-width) {
+    margin: 0 18px;
+  }
+}
+
+.services__item--food::after {
+  content: "";
+  position: absolute;
+  background-image: url("../img/food-icon.svg");
+  background-repeat: no-repeat;
+  background-size: auto;
+  width: 40px;
+  height: 40px;
+  top: 0;
+  left: 0;
+  margin-top: 23px;
+  margin-left: 18px;
+
+  @media (min-width: $tablet-width) {
+    position: static;
+    display: block;
+    order: -1;
+    margin: 0 auto;
+  }
+}
+
+.services__item--souvenirs {
+  position: relative;
+
+  @media (min-width: $tablet-width) {
+    margin: 0 8px;
+  }
+}
+
+.services__item--souvenirs::after {
+  content: "";
+  position: absolute;
+  background-image: url("../img/suvenir-icon.svg");
+  background-repeat: no-repeat;
+  background-size: auto;
+  width: 40px;
+  height: 40px;
+  top: 0;
+  left: 0;
+  margin-top: 23px;
+  margin-left: 18px;
+
+  @media (min-width: $tablet-width) {
+    position: static;
+    display: block;
+    order: -1;
+    margin: 0 auto;
+  }
 }
 
 .services__description {
@@ -38,8 +126,33 @@
   line-height: 21px;
   text-transform: uppercase;
   color: #333333;
+  padding-top: 16px;
+
+  @media (min-width: $tablet-width) {
+    text-align: center;
+
+  }
 }
 
 .services__item {
-  padding: 5px 10px;
+  padding: 23px 18px 25px 65px;
+  text-align: left;
+
+  @media (min-width: $tablet-width) {
+    padding: 60px 33px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 100%;
+    padding: 60px 20px;
+  }
+}
+.services__desktop-br {
+  display: none;
+
+  @media (min-width: $desktop-width) {
+    display: inline;
+  }
 }
