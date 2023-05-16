@@ -27,7 +27,10 @@
 }
 
 .main-footer__copyright {
+  display: flex;
   margin: 20px;
   padding-bottom: 20px;
   text-align: center;
+  align-items: center;
+  justify-content: center;
 }
