@@ -1,11 +1,18 @@
 .visit__title {
+  position: relative;
+  margin-top: 59px;
   font-weight: 700;
   font-size: 18px;
   line-height: 26px;
   text-transform: uppercase;
+  text-align: center;
 
   @media (min-width: $tablet-width) {
-    margin-top: 58px;
+    margin-top: 50px;
+    width: 308px;
+    margin: 0 auto;
+    margin-top: 50px;
+    font-size: 21px;
   }
 
   @media (min-width: $desktop-width) {
@@ -13,26 +20,103 @@
   }
 }
 
+.visit__title::after {
+  content:  "";
+  position: absolute;
+  width: 320px;
+  height: 1px;
+  left: 0;
+  bottom: 72px;
+  background-color: #E5E5E5;
+
+  @media (min-width: $tablet-width) {
+    content: "";
+    position: absolute;
+    width: 123px;
+    height: 1px;
+    left: -140px;
+    top: 23px;
+    background-color: #E5E5E5;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 280px;
+    left: -310px;
+  }
+}
+
+.visit__title::before {
+  @media (min-width: $tablet-width) {
+    content:  "";
+    position: absolute;
+    width: 123px;
+    height: 1px;
+    left: 320px;
+    top: 23px;
+    background-color: #E5E5E5;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 280px;
+
+  }
+}
+
 .visit__mark {
   font-weight: 700;
   font-size: 18px;
   line-height: 26px;
+  padding-left: 50px;
 }
 
-.visit {
-  text-align: center;
+.visit__control {
+  position: relative;
+  display: block;
+  padding-top: 35px;
+  text-align: left;
 }
 
 .visit__filter-list {
+  list-style-type: none;
+
   @media (min-width: $tablet-width) {
     display: grid;
     grid-template-columns:224px 224px ;
     width: 668px;
+    justify-content: end;
   }
 
   @media (min-width: $desktop-width) {
     display: grid;
     grid-template-columns:172px 172px 172px 172px;
     width: 1100px;
+    justify-content: space-around;
   }
+}
+
+.visit__mark::before {
+  content: "";
+  position: absolute;
+  bottom: -10px;
+  left: 0;
+  width: 46px;
+  height: 46px;
+  background-color: #F2F2F2;
+}
+
+.visit__mark::after {
+  content: "";
+  display: none;
+  position: absolute;
+  background-repeat: no-repeat;
+  background-position: center;
+  bottom: -10px;
+  left: 0;
+  width: 46px;
+  height: 46px;
+  background-image: url("../img/tick.svg");
+}
+
+.visit__control-input:checked + .visit__mark::after {
+  display: block;
 }

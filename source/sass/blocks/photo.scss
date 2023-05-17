@@ -7,7 +7,7 @@
   text-align: center;
 
   @media (min-width: $tablet-width) {
-
+    font-size: 30px;
     margin-top: 66px;
   }
 
@@ -26,6 +26,37 @@
   text-align: center;
 }
 
+.photo__card {
+  position: relative;
+  margin-top: 40px;
+
+  @media (min-width: $tablet-width) {
+    margin-top: 0;
+  }
+}
+
+.photo__card::before {
+  content:  "";
+  position: absolute;
+  width: 320px;
+  height: 1px;
+  left: -20px;
+  top: -24px;
+  background-color: #E5E5E5;
+
+
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
+}
+.photo-container {
+  padding: 0 20px;
+
+  @media (min-width: $tablet-width) {
+    padding: 0;
+  }
+}
+
 .photo__wrapper {
   margin-top: 50px;
 
@@ -41,6 +72,7 @@
 .photo__list {
   padding: 0;
   min-height: 200px;
+  list-style: none;
 
   @media (min-width: $tablet-width) {
     width: 768px;
@@ -64,6 +96,7 @@
 
   @media (min-width: $desktop-width) {
     grid-column: 1 / 4;
+    margin-bottom: -7px;
   }
 }
 
@@ -78,6 +111,15 @@
   text-transform: uppercase;
   color: #000000;
 
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    color: #FFFFFF;
+  }
+
 }
 
 .photo__title {
@@ -85,6 +127,14 @@
   font-size: 14px;
   line-height: 21px;
   color: #333333;
+
+  @media (min-width: $tablet-width) {
+    margin-top: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    color: #FFFFFF;
+  }
 }
 
 .photo__description {
@@ -92,18 +142,27 @@
   font-size: 14px;
   line-height: 21px;
   color: #000000;
+  margin-top: 2px;
+  margin-left: 10px;
+
+  @media (min-width: $desktop-width) {
+    color: #FFFFFF;
+  }
 }
 
 .photo__photo-title-catalog {
+  position: relative;
   font-weight: 700;
   font-size: 21px;
   line-height: 26px;
   text-transform: uppercase;
   color: #000000;
   text-align: center;
+  margin-top: 40px;
 
   @media (min-width: $tablet-width) {
     margin-top: 58px;
+    font-size: 30px;
   }
 
   @media (min-width: $desktop-width) {
@@ -111,13 +170,30 @@
   }
 }
 
+.photo__photo-title-catalog::after {
+  content:  "";
+  position: absolute;
+  width: 320px;
+  height: 1px;
+  left: -20px;
+  top: -24px;
+  background-color: #E5E5E5;
+
+
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
+}
+
 .photo__photo-description-catalog{
+  position: relative;
   font-weight: 400;
   font-size: 14px;
   line-height: 21px;
   text-transform: uppercase;
   color: #333333;
   text-align: center;
+  margin: 38px 5px;
 }
 
 .photo__video {
@@ -126,3 +202,115 @@
   text-align: center;
   margin: auto;
 }
+
+.photo-like-wrapper {
+  display: flex;
+  margin-right: 20px;
+
+  @media (min-width: $tablet-width) {
+    margin-top: 30px;
+  }
+
+
+}
+
+.photo-white-lake {
+  opacity: 0.3;
+
+  @media (min-width: $desktop-width) {
+    fill: #FFFFFF;
+    color: #FFFFFF;
+    opacity: 1;
+  }
+}
+
+.photo__photo-description-catalog::after {
+    content: "";
+    position: absolute;
+    background-repeat: no-repeat;
+    background-position: center;
+    bottom: -166px;
+    left: 109px;
+    width: 48px;
+    height: 54px;
+    background-image: url("../img/play.svg");
+
+    @media (min-width: $tablet-width) {
+      left: 358px;
+      bottom: -326px;
+    }
+
+    @media (min-width: $desktop-width) {
+      left: 580px;
+    }
+
+}
+
+.photo__tablet-br {
+  display: none;
+
+
+
+  @media (min-width: $tablet-width) {
+    display: inline;
+  }
+}
+
+.photo-info-wrapper {
+  @media (min-width: $tablet-width) {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    background-color: #F2F2F2;
+    margin-top: -6px;
+    min-height: 80px;
+  }
+
+  @media (min-width: $desktop-width) {
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.3);
+    margin-top: -86px;
+    z-index: 1;
+    width: 400px;
+  }
+}
+
+.photo-info-wrapper2 {
+  @media (min-width: $tablet-width) {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    background-color: #EAEAEA;
+    margin-top: -6px;
+    min-height: 80px;
+  }
+
+  @media (min-width: $desktop-width) {
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.3);
+    margin-top: -86px;
+    z-index: 1;
+    width: 400px;
+  }
+}
+
+.photo-info-title {
+  @media (min-width: $tablet-width) {
+    margin-left: 20px;
+  }
+
+}
+
+.photo__videow-wrapper {
+  @media (min-width: $tablet-width) {
+    padding: 0 20px;
+  }
+}
+
+.photo-info-wrapper-width1 {
+  @media (min-width: $desktop-width) {
+    width: 1200px;
+  }
+}
+
+

@@ -1,8 +1,28 @@
 .contact__title {
+  position: relative;
   font-weight: 700;
   font-size: 18px;
   line-height: 26px;
   text-transform: uppercase;
+  margin-top: 64px;
+
+  @media (min-width: $tablet-width) {
+  margin-top: 15px;
+  }
+}
+
+.contact__title::after {
+  content:  "";
+  position: absolute;
+  width: 320px;
+  height: 1px;
+  left: -40px;
+  bottom: 52px;
+  background-color: #E5E5E5;
+
+  @media (min-width: $tablet-width) {
+    display:none ;
+  }
 }
 
 .contact__label {
@@ -13,12 +33,93 @@
   color: #333333;
   display: flex;
   flex-direction: column;
+
+
+  @media (min-width: $tablet-width) {
+    margin-left: 58px;
+  }
 }
 
 .contact {
   display: flex;
-  justify-content: center;
   align-items: center;
   flex-direction: column;
+}
+
+
+.contact__input {
+  position: relative;
+  width: 280px;
+  height: 58px;
+  padding-left: 16px;
+
+  @media (min-width: $tablet-width) {
+    width: 295px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 430px;
+  }
+}
+.contact__input::placeholder {
+  color: rgba(0, 0, 0, 0.3);
+}
+
+.contact__label-tel{
+  position: relative;
+}
+
+.contact__label-tel::before{
+  box-sizing: border-box;
+  content: "";
+  position: absolute;
+  top: 21px;
+  right: 0;
+  width: 58px;
+  height: 58px;
+  background-color: #E6E6E6;
+  z-index: 1;
+}
+
+.contact__label-tel::after {
+    content: "";
+    position: absolute;
+    background-repeat: no-repeat;
+    background-position: center;
+    bottom: 0;
+    right: 0;
+    width: 58px;
+    height: 58px;
+    background-image: url("../img/tel.svg");
+    z-index: 2;
+}
+
+.contact__label-email {
+  position: relative;
+}
+
+.contact__label-email::before{
+  box-sizing: border-box;
+  content: "";
+  position: absolute;
+  top: 21px;
+  right: 0;
+  width: 58px;
+  height: 58px;
+  background-color: #E6E6E6;
+  z-index: 1;
+}
+
+.contact__label-email::after {
+  content: "";
+  position: absolute;
+  background-repeat: no-repeat;
+  background-position: center;
+  bottom: 0;
+  right: 0;
+  width: 58px;
+  height: 58px;
+  background-image: url("../img/male.svg");
+  z-index: 2;
 }
 

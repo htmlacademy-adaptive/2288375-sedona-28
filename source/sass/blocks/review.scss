@@ -4,14 +4,41 @@
   line-height: 26px;
   text-transform: uppercase;
   color: #000000;
+
+  @media (min-width: $tablet-width) {
+    font-size: 30px;
+    line-height: 26px;
+  }
+
 }
 
 .review__intro-description-form {
+  position: relative;
   font-weight: 400;
   font-size: 14px;
   line-height: 21px;
   text-transform: uppercase;
   color: #333333;
+
+  @media (min-width: $tablet-width) {
+    width: 435px ;
+    margin: 0 auto;
+  }
+}
+
+.review__intro-description-form::after {
+  content:  "";
+  position: absolute;
+  width: 320px;
+  height: 1px;
+  left: 0px;
+  top: 102px;
+  background-color: #E5E5E5;
+
+  @media (min-width: $tablet-width) {
+    display:none ;
+  }
+
 }
 
 .review__title {
@@ -30,6 +57,20 @@
   color:#333333;
 }
 
+.review__input {
+width: 280px;
+height: 58px;
+padding-left: 16px;
+
+@media (min-width: $tablet-width) {
+  width: 295px;
+}
+
+@media (min-width: $desktop-width) {
+  width: 430px;
+}
+}
+
 .review__description {
   font-weight: 400;
   font-size: 12px;
@@ -37,6 +78,16 @@
   text-transform: uppercase;
   color: rgba(51, 51, 51, 0.6);
   text-align: right;
+  margin-right: 20px;
+
+  @media (min-width: $tablet-width) {
+    margin-right: 60px;
+    color: #333333;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-right: 220px;
+  }
 }
 
 .review__intro {
@@ -56,11 +107,30 @@
 }
 
 .review__container {
+  position: relative;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
   margin: 0 15px;
+}
+
+.review__container::before {
+  @media (min-width: $tablet-width) {
+    content:  "";
+    position: absolute;
+    width: 320px;
+    height: 1px;
+    left: 160px;
+    top: 102px;
+    background-color: #E5E5E5;
+    margin-top: 53px;
+    transform: rotate(90deg)
+  }
+
+  @media (min-width: $desktop-width) {
+    left: 342px;
+  }
 }
 
 .review__label {
@@ -72,6 +142,12 @@
   @media (min-width: $tablet-width) {
     display: flex;
     margin-top: 108px;
+    margin-left: 76px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 68px auto;
+    justify-content: space-around;
   }
 }
 
@@ -81,6 +157,7 @@
     margin: auto;
     width: $tablet-width;
     margin-top: 48px;
+    justify-content: space-between;
   }
 
   @media (min-width: $desktop-width) {
@@ -91,4 +168,18 @@
     text-align: center;
   }
 
+}
+
+.review__button {
+  padding: 16px 49px;
+  border: none;
+  margin: 0 auto;
+
+  @media (min-width: $tablet-width) {
+    margin-left: 60px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-left: 210px;
+  }
 }

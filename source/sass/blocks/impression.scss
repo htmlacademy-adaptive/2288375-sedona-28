@@ -1,11 +1,15 @@
   .impression__title {
+    margin-top: 64px;
+    position: relative;
     font-weight: 700;
     font-size: 18px;
     line-height: 26px;
     text-transform: uppercase;
+    text-align: center;
 
     @media (min-width: $tablet-width) {
       margin-top: 63px;
+      font-size: 21px;
     }
 
     @media (min-width: $desktop-width) {
@@ -13,23 +17,102 @@
     }
   }
 
+  .impression__title::after {
+    content:  "";
+    position: absolute;
+    width: 320px;
+    height: 1px;
+    left: 0;
+    bottom: 52px;
+    background-color: #E5E5E5;
+
+    @media (min-width: $tablet-width) {
+      content:  "";
+      position: absolute;
+      width: 123px;
+      height: 1px;
+      left: 90px;
+      top: 13px;
+      background-color: #E5E5E5;
+    }
+
+    @media (min-width: $desktop-width) {
+      width: 280px;
+      left: 140px;
+    }
+  }
+
+  .impression__title::before {
+    @media (min-width: $tablet-width) {
+      content:  "";
+      position: absolute;
+      width: 123px;
+      height: 1px;
+      left: 550px;
+      top: 13px;
+      background-color: #E5E5E5;
+    }
+
+    @media (min-width: $desktop-width) {
+      width: 280px;
+      left: 775px;
+    }
+  }
+
+  .impression__control {
+    position: relative;
+    display: block;
+  }
+
   .impression__mark {
     font-weight: 700;
     font-size: 18px;
     line-height: 26px;
+    padding-left: 60px;
+    text-align: left;
+  }
+  .impression__mark::before {
+    content: "";
+    position: absolute;
+    bottom: -10px;
+    left: 0;
+    width: 46px;
+    height: 46px;
+    border: none;
+    background-color: #F2F2F2;
+    border-radius: 50%;
   }
 
-  .impression {
-    text-align: center;
-    margin-left: 150px;
+  .impression__mark::after {
+    display: none;
+    content: "";
+    position: absolute;
+    top: 5px;
+    left: 15px;
+    width: 16px;
+    height: 16px;
+    border: none;
+    background-color: #333333;
+    border-radius: 50%;
   }
+
+  .impression__filter-item {
+    padding-top: 30px;
+  }
+
+
+  .impression__control-mark:hover {
+  }
+
 
   .impression__filter-list {
+    list-style-type: none;
 
     @media (min-width: $tablet-width) {
       display: grid;
       grid-template-columns:280px 280px ;
       width: 668px;
+      justify-content: end;
     }
 
     @media (min-width: $desktop-width) {
@@ -38,3 +121,8 @@
       width: 1100px;
     }
   }
+
+.impression__control-input:checked + .impression__mark::after{
+display: block;
+}
+
