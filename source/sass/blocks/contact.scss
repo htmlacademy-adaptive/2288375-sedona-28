@@ -49,12 +49,20 @@
 
 .contact__input {
   position: relative;
-  padding: 16px 69px 16px 16px;
-  color: rgba(0, 0, 0, 0.3);
+  width: 280px;
+  height: 58px;
+  padding-left: 16px;
+
+  @media (min-width: $tablet-width) {
+    width: 295px;
+  }
 
   @media (min-width: $desktop-width) {
-    padding: 16px 190px 16px 16px;
+    width: 430px;
+  }
 }
+.contact__input::placeholder {
+  color: rgba(0, 0, 0, 0.3);
 }
 
 .contact__label-tel{

@@ -34,6 +34,7 @@
 
   @media (min-width: $tablet-width) {
     margin-top: 26px;
+    font-size: 21px;
   }
 
 }
@@ -60,6 +61,9 @@
     display: block;
     order: -1;
     margin: 0 auto;
+    background-size: 77px 72px;
+    width: 77px;
+    height: 72px;
   }
 }
 .services__item--food {
@@ -88,6 +92,9 @@
     display: block;
     order: -1;
     margin: 0 auto;
+    background-size: 80px 68px;
+    width: 80px;
+    height: 68px;
   }
 }
 
@@ -117,6 +124,9 @@
     display: block;
     order: -1;
     margin: 0 auto;
+    background-size: 66px 75px;
+    width: 66px;
+    height: 75px;
   }
 }
 

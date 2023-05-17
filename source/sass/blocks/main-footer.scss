@@ -4,14 +4,18 @@
   line-height: 26px;
   text-transform: uppercase;
   width: 136px;
-  margin: 51px auto;
+  margin: 0 auto;
+  padding-top: 50px;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 0;
+  }
 }
 
 .main-footer__wrapper {
-  margin: 51px auto;
+  background-color: #ffffff;
 
   @media (min-width: $tablet-width) {
-    margin: 51px auto;
     max-width: 768px;
     display: flex;
     align-items: center;
@@ -19,7 +23,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    margin: 51px auto;
+
     max-width: 1200px;
     display: flex;
     align-items: center;

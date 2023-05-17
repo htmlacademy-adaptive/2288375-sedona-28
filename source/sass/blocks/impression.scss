@@ -5,6 +5,7 @@
     font-size: 18px;
     line-height: 26px;
     text-transform: uppercase;
+    text-align: center;
 
     @media (min-width: $tablet-width) {
       margin-top: 63px;
@@ -67,7 +68,8 @@
     font-weight: 700;
     font-size: 18px;
     line-height: 26px;
-    padding-left: 10px;
+    padding-left: 60px;
+    text-align: left;
   }
   .impression__mark::before {
     content: "";
@@ -99,14 +101,9 @@
   }
 
 
-
   .impression__control-mark:hover {
   }
 
-
-  .impression {
-    text-align: center;
-  }
 
   .impression__filter-list {
     list-style-type: none;

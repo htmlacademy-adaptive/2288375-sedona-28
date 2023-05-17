@@ -26,6 +26,29 @@
   text-align: center;
 }
 
+.photo__card {
+  position: relative;
+  margin-top: 40px;
+
+  @media (min-width: $tablet-width) {
+    margin-top: 0;
+  }
+}
+
+.photo__card::before {
+  content:  "";
+  position: absolute;
+  width: 320px;
+  height: 1px;
+  left: -20px;
+  top: -24px;
+  background-color: #E5E5E5;
+
+
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
+}
 .photo-container {
   padding: 0 20px;
 
@@ -128,12 +151,14 @@
 }
 
 .photo__photo-title-catalog {
+  position: relative;
   font-weight: 700;
   font-size: 21px;
   line-height: 26px;
   text-transform: uppercase;
   color: #000000;
   text-align: center;
+  margin-top: 40px;
 
   @media (min-width: $tablet-width) {
     margin-top: 58px;
@@ -142,6 +167,21 @@
 
   @media (min-width: $desktop-width) {
     margin-top: 50px;
+  }
+}
+
+.photo__photo-title-catalog::after {
+  content:  "";
+  position: absolute;
+  width: 320px;
+  height: 1px;
+  left: -20px;
+  top: -24px;
+  background-color: #E5E5E5;
+
+
+  @media (min-width: $tablet-width) {
+    display: none;
   }
 }
 
@@ -175,11 +215,12 @@
 }
 
 .photo-white-lake {
+  opacity: 0.3;
+
   @media (min-width: $desktop-width) {
-    background-image: url("../../img/like-icon-white.svg");
-    content: "";
-    background-repeat: no-repeat;
-    background-position: center;
+    fill: #FFFFFF;
+    color: #FFFFFF;
+    opacity: 1;
   }
 }
 

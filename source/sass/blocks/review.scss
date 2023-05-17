@@ -58,10 +58,16 @@
 }
 
 .review__input {
-padding: 16px 36px;
+width: 280px;
+height: 58px;
+padding-left: 16px;
+
+@media (min-width: $tablet-width) {
+  width: 295px;
+}
 
 @media (min-width: $desktop-width) {
-  padding: 16px 176px 16px 16px;
+  width: 430px;
 }
 }
 

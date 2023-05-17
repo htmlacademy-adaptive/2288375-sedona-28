@@ -5,11 +5,13 @@
   font-size: 18px;
   line-height: 26px;
   text-transform: uppercase;
+  text-align: center;
 
   @media (min-width: $tablet-width) {
-    margin-top: 58px;
+    margin-top: 50px;
     width: 308px;
     margin: 0 auto;
+    margin-top: 50px;
     font-size: 21px;
   }
 
@@ -71,12 +73,7 @@
   position: relative;
   display: block;
   padding-top: 35px;
-}
-
-
-
-.visit {
-  text-align: center;
+  text-align: left;
 }
 
 .visit__filter-list {

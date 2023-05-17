@@ -5,6 +5,10 @@
   text-transform: uppercase;
   color: #000000;
   margin-top: 60px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 30px;
+  }
 }
 
 .search__description {
@@ -19,7 +23,6 @@
   @media (min-width: $tablet-width) {
     margin: auto;
     width: 435px;
-
   }
 }
 
