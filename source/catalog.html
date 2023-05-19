@@ -6,6 +6,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Фото и видео</title>
   <link rel="stylesheet" href="./css/style.css">
+  <link rel="icon" href="favicon.ico"> <!-- 32×32 -->
+  <link rel="icon" href="img/favicons/favicon-32x32.png" type="image/png+xml">
+  <link rel="apple-touch-icon" href="img/favicons/apple-icon-180x180.png"> <!-- 180×180 -->
+  <link rel="manifest" href="manifest.webmanifest">
 </head>
 
 <body class="page__body">
@@ -41,11 +45,12 @@
     <section class="hero">
       <h2 class="visually-hidden">Седона</h2>
       <picture>
-        <source srcset="./img/intro.jpg" media="(min-width: 1200px)">
-        <source srcset="./img/Intro-tablet.jpg" media="(min-width: 768px)">
-        <img class="welcome" src="./img/back-mobile.jpg"
-          alt="Welcome To the Gorgeous Sedona Because the Grand Canyon Sucks!">
-      </picture>
+        <picture>
+          <source srcset="./img/intro.jpg 1x, /img/intro@2x.jpg 2x" media="(min-width: 1200px)">
+          <source srcset="./img/intro-tablet.jpg 1x, /img/intro-tablet@2x.jpg 2x" media="(min-width: 768px)">
+          <img class="welcome" src="./img/back-mobile.jpg" srcset="./img/back-mobile@2x.jpg 2x"
+            alt="Welcome To the Gorgeous Sedona Because the Grand Canyon Sucks!">
+        </picture>
     </section>
 
     <main class="main-container">
@@ -60,9 +65,12 @@
               <li class="photo__card photo-fest">
                 <a class="photo__link" href="#">
                   <picture>
-                    <source srcset="./img/photo-1-desktop.jpg" media="(min-width: 1200px)">
-                    <source srcset="./img/photo-1-tablet.jpg" media="(min-width: 768px)">
-                    <img class="photo__photo-card" src="./img/photo-1-mobile.jpg" alt="Неродные просторы">
+                    <source srcset="./img/photo-1-desktop.jpg 1x, /img/photo-1-desktop@2.jpg 2x"
+                      media="(min-width: 1200px)">
+                    <source srcset="./img/photo-1-tablet.jpg 1x, /img/photo-1-tablet@2.jpg 2x"
+                      media="(min-width: 768px)">
+                    <img class="photo__photo-card" src="./img/photo-1-mobile.jpg" srcset="./img/photo-1-mobile@2.jpg 2x"
+                      alt="Неродные просторы">
                   </picture>
                 </a>
                 <div class="photo-info-wrapper photo-info-wrapper-width1">
@@ -72,7 +80,8 @@
                   </div>
                   <div class="photo-like-wrapper">
                     <span class="visually-hidden">лайк.</span>
-                    <svg class="photo-white-lake" width="23" height="21" viewBox="0 0 23 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <svg class="photo-white-lake" width="23" height="21" viewBox="0 0 23 21" fill="none"
+                      xmlns="http://www.w3.org/2000/svg">
                       <path
                         d="M12.9636 3.78L12.3364 6.825L11.7091 9.45H14.3227H20.8045V11.55C20.8045 11.55 20.8045 11.55 20.8045 11.655L17.7727 18.9H8.36364V8.4L12.9636 3.78ZM2.09091 10.5V18.9V10.5ZM13.8 0L6.9 6.93C6.48182 7.245 6.27273 7.77 6.27273 8.4V18.9C6.27273 20.055 7.21364 21 8.36364 21H17.7727C18.6091 21 19.3409 20.475 19.6545 19.74L22.7909 12.285C22.8955 12.075 22.8955 11.76 22.8955 11.55V9.45H23C23 8.295 22.0591 7.35 20.9091 7.35H14.3227L15.3682 2.52V2.205C15.3682 1.785 15.1591 1.365 14.95 1.05L13.8 0ZM4.18182 8.4H0V21H4.18182V8.4Z"
                         fill="currentColor" />
@@ -84,9 +93,11 @@
               <li class="photo__card">
                 <a class="photo__link" href="#">
                   <picture>
-                    <source srcset="./img/photo-2-desktop.jpg" media="(min-width: 1200px)">
-                    <source srcset="./img/photo-2-tablet.jpg" media="(min-width: 768px)">
-                    <img class="photo__photo-card" src="./img/photo-2-mobile.jpg" alt="Местная растительность">
+                    <source srcset="./img/photo-2-desktop.jpg, /img/photo-2-desktop@2.jpg 2x"
+                      media="(min-width: 1200px)">
+                    <source srcset="./img/photo-2-tablet.jpg, /img/photo-2-tablet@2.jpg 2x" media="(min-width: 768px)">
+                    <img class="photo__photo-card" src="./img/photo-2-mobile.jpg" srcset="./img/photo-2-mobile@2.jpg 2x"
+                      alt="Местная растительность">
                   </picture>
                 </a>
                 <div class="photo-info-wrapper">
@@ -96,7 +107,8 @@
                   </div>
                   <div class="photo-like-wrapper">
                     <span class="visually-hidden">лайк.</span>
-                    <svg class="photo-white-lake" width="23" height="21" viewBox="0 0 23 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <svg class="photo-white-lake" width="23" height="21" viewBox="0 0 23 21" fill="none"
+                      xmlns="http://www.w3.org/2000/svg">
                       <path
                         d="M12.9636 3.78L12.3364 6.825L11.7091 9.45H14.3227H20.8045V11.55C20.8045 11.55 20.8045 11.55 20.8045 11.655L17.7727 18.9H8.36364V8.4L12.9636 3.78ZM2.09091 10.5V18.9V10.5ZM13.8 0L6.9 6.93C6.48182 7.245 6.27273 7.77 6.27273 8.4V18.9C6.27273 20.055 7.21364 21 8.36364 21H17.7727C18.6091 21 19.3409 20.475 19.6545 19.74L22.7909 12.285C22.8955 12.075 22.8955 11.76 22.8955 11.55V9.45H23C23 8.295 22.0591 7.35 20.9091 7.35H14.3227L15.3682 2.52V2.205C15.3682 1.785 15.1591 1.365 14.95 1.05L13.8 0ZM4.18182 8.4H0V21H4.18182V8.4Z"
                         fill="currentColor" />
@@ -108,9 +120,11 @@
               <li class="photo__card">
                 <a class="photo__link" href="#">
                   <picture>
-                    <source srcset="./img/photo-3-desktop.jpg" media="(min-width: 1200px)">
-                    <source srcset="./img/photo-3-tablet.jpg" media="(min-width: 768px)">
-                    <img class="photo__photo-card" src="./img/photo-2-mobile.jpg" alt="Дорога на север">
+                    <source srcset="./img/photo-3-desktop.jpg, /img/photo-3-desktop@2.jpg 2x"
+                      media="(min-width: 1200px)">
+                    <source srcset="./img/photo-3-tablet.jpg, /img/photo-3-tablet@2.jpg 2x" media="(min-width: 768px)">
+                    <img class="photo__photo-card" src="./img/photo-2-mobile.jpg"
+                      srcset="./img/photo-3-mobile.@2.jpg 2x" alt="Дорога на север">
                   </picture>
                 </a>
                 <div class="photo-info-wrapper2">
@@ -120,7 +134,8 @@
                   </div>
                   <div class="photo-like-wrapper">
                     <span class="visually-hidden">лайк.</span>
-                    <svg  class="photo-white-lake"width="23" height="21" viewBox="0 0 23 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <svg class="photo-white-lake" width="23" height="21" viewBox="0 0 23 21" fill="none"
+                      xmlns="http://www.w3.org/2000/svg">
                       <path
                         d="M12.9636 3.78L12.3364 6.825L11.7091 9.45H14.3227H20.8045V11.55C20.8045 11.55 20.8045 11.55 20.8045 11.655L17.7727 18.9H8.36364V8.4L12.9636 3.78ZM2.09091 10.5V18.9V10.5ZM13.8 0L6.9 6.93C6.48182 7.245 6.27273 7.77 6.27273 8.4V18.9C6.27273 20.055 7.21364 21 8.36364 21H17.7727C18.6091 21 19.3409 20.475 19.6545 19.74L22.7909 12.285C22.8955 12.075 22.8955 11.76 22.8955 11.55V9.45H23C23 8.295 22.0591 7.35 20.9091 7.35H14.3227L15.3682 2.52V2.205C15.3682 1.785 15.1591 1.365 14.95 1.05L13.8 0ZM4.18182 8.4H0V21H4.18182V8.4Z"
                         fill="currentColor" />
@@ -132,9 +147,11 @@
               <li class="photo__card">
                 <a class="photo__link" href="#">
                   <picture>
-                    <source srcset="./img/photo-4-desktop.jpg" media="(min-width: 1200px)">
-                    <source srcset="./img/photo-4-tablet.jpg" media="(min-width: 768px)">
-                    <img class="photo__photo-card" src="./img/photo-4-mob.jpg" alt="Мост дьявола">
+                    <source srcset="./img/photo-4-desktop.jpg, /img/photo-4-desktop@2.jpg 2x"
+                      media="(min-width: 1200px)">
+                    <source srcset="./img/photo-4-tablet.jpg, /img/photo-4-tablet@2.jpg 2x" media="(min-width: 768px)">
+                    <img class="photo__photo-card" src="./img/photo-4-mob.jpg" srcset="./img/photo-4-mobile.@2.jpg 2x"
+                      alt="Мост дьявола">
                   </picture>
                 </a>
                 <div class="photo-info-wrapper">
@@ -144,7 +161,8 @@
                   </div>
                   <div class="photo-like-wrapper">
                     <span class="visually-hidden">лайк.</span>
-                    <svg class="photo-white-lake" width="23" height="21" viewBox="0 0 23 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <svg class="photo-white-lake" width="23" height="21" viewBox="0 0 23 21" fill="none"
+                      xmlns="http://www.w3.org/2000/svg">
                       <path
                         d="M12.9636 3.78L12.3364 6.825L11.7091 9.45H14.3227H20.8045V11.55C20.8045 11.55 20.8045 11.55 20.8045 11.655L17.7727 18.9H8.36364V8.4L12.9636 3.78ZM2.09091 10.5V18.9V10.5ZM13.8 0L6.9 6.93C6.48182 7.245 6.27273 7.77 6.27273 8.4V18.9C6.27273 20.055 7.21364 21 8.36364 21H17.7727C18.6091 21 19.3409 20.475 19.6545 19.74L22.7909 12.285C22.8955 12.075 22.8955 11.76 22.8955 11.55V9.45H23C23 8.295 22.0591 7.35 20.9091 7.35H14.3227L15.3682 2.52V2.205C15.3682 1.785 15.1591 1.365 14.95 1.05L13.8 0ZM4.18182 8.4H0V21H4.18182V8.4Z"
                         fill="currentColor" />
@@ -159,11 +177,11 @@
               <p class="photo__photo-description-catalog">Смотрите видеопрезентацию и скорее за билетами, пока они <br
                   class="photo__tablet-br"> не
                 подорожали в очередной раз!</p>
-                <picture>
-                  <source srcset="./img/video-desktop.jpg" media="(min-width: 1200px)">
-                  <source srcset="./img/video-tablet.jpg" media="(min-width: 748px)">
-                  <img class="photo__video" src="./img/video-mobile.jpg" alt="Видео седона">
-                </picture>
+              <picture>
+                <source srcset="./img/video-desktop.jpg" media="(min-width: 1200px)">
+                <source srcset="./img/video-tablet.jpg" media="(min-width: 748px)">
+                <img class="photo__video" src="./img/video-mobile.jpg" alt="Видео седона">
+              </picture>
               <button class="photo__play visually-hidden" alt="кнопка плэй" type="button"></button>
             </div>
           </div>
