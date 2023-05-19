@@ -96,19 +96,11 @@
 }
 
 .advantages__foto-sity {
-  @media (min-width: $tablet-width) {
-
-    width: 512px;
-    height: 256px;
-  }
-
-  @media (min-width: $desktop-width) {
-
-    width: 800px;
-    height: 256px;
-  }
+  vertical-align: bottom;
 }
+
 .advantages__foto-sity--second {
+  vertical-align: bottom;
 
   @media (min-width: $tablet-width) {
     grid-column: 1/2;
@@ -118,7 +110,6 @@
   }
 
   @media (min-width: $desktop-width) {
-
     width: 800px;
     height: 256px;
   }

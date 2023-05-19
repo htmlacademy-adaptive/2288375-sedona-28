@@ -1,10 +1,40 @@
-.map {
-  margin: auto;
+.map{
+  position: relative;
+  margin: 0 auto;
   width: 320px;
+  text-align: center;
+
+  @media (min-width: $tablet-width) {
+    width: 768px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 1200px;
+  }
+}
+
+.map iframe {
+  position: absolute;
+  width: 320px;
+  height: 350px;
+  display: block;
+
+  @media (min-width: $tablet-width) {
+    width: 768px;
+
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 1200px;
+  }
+
 }
 
 .map__image {
+
+  display: block;
   margin-top: 55px;
+  text-align: center;
 
   @media (min-width: $tablet-width) {
     margin-top: 55px;

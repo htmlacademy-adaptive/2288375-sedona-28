@@ -6,6 +6,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Форма</title>
   <link rel="stylesheet" href="./css/style.css">
+  <link rel="icon" href="favicon.ico"> <!-- 32×32 -->
+  <link rel="icon" href="img/favicons/favicon-32x32.png" type="image/png+xml">
+  <link rel="apple-touch-icon" href="img/favicons/apple-icon-180x180.png"> <!-- 180×180 -->
+  <link rel="manifest" href="manifest.webmanifest">
 </head>
 
 <body class="page__body">
@@ -41,9 +45,9 @@
     <section class="hero">
       <h2 class="visually-hidden">Седона</h2>
       <picture>
-        <source srcset="./img/intro.jpg" media="(min-width: 1200px)">
-        <source srcset="./img/Intro-tablet.jpg" media="(min-width: 768px)">
-        <img class="welcome" src="./img/back-mobile.jpg"
+        <source srcset="./img/intro.jpg 1x, img/intro@2x.jpg 2x" media="(min-width: 1200px)">
+        <source srcset="./img/intro-tablet.jpg 1x, img/intro-tablet@2x.jpg 2x" media="(min-width: 768px)">
+        <img class="welcome" src="./img/back-mobile.jpg" srcset="./img/back-mobile@2x.jpg 2x"
           alt="Welcome To the Gorgeous Sedona Because the Grand Canyon Sucks!">
       </picture>
     </section>
@@ -75,7 +79,8 @@
                 <input name="contact__info-tel" class="input contact__input" placeholder="Введите телефон" type="tel">
               </label>
               <label class="contact__label contact__label-email label">Электронная почта*:
-                <input name="contact__info-email" class="input contact__input " placeholder="Введите e-mail" type="email">
+                <input name="contact__info-email" class="input contact__input" placeholder="Введите e-mail"
+                  type="email">
               </label>
             </div>
           </div>
@@ -84,7 +89,8 @@
             <ul class="impression__filter-list">
               <li class="impression__filter-item">
                 <label class="impression__control">
-                  <input class="impression__control-input visually-hidden" type="radio" name="mark" value="positive" checked>
+                  <input class="impression__control-input visually-hidden" type="radio" name="mark" value="positive"
+                    checked>
                   <span class="impression__mark">Скорее положительное</span>
                 </label>
               </li>
@@ -212,7 +218,7 @@
 
   <div class="modal-container1 modal-container1-close">
     <div class="modal-container1__position modal-container1__error">
-        <span class="visually-hidden">Ok</span>
+      <span class="visually-hidden">Ok</span>
       <section class="modal-container1__content">
         <h2 class="modal-container1__title">Что-то пошло не так!</h2>
         <p class="modal-container1__form">Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить</p>
@@ -225,12 +231,13 @@
     <div class="modal-container2__position modal-container2__sent">
       <section class="modal-container2__content">
         <h2 class="modal-container2__title">Ваш отзыв отправлен!</h2>
-        <p class="modal-container2__form">Спасибо за ваше участие, ваш отзыв уже поступил к нам. <br> В ближайшее время мы опубликуем его на сайте</p>
+        <p class="modal-container2__form">Спасибо за ваше участие, ваш отзыв уже поступил к нам. <br> В ближайшее время
+          мы опубликуем его на сайте</p>
         <div class="modal-container2_wrapper-button">
-        <button class="modal-container2-button" type="submit">ЗАКРЫТЬ ОКНО
-          <span class="visually-hidden">ЗАКРЫТЬ ОКНО</span>
-        </button>
-      </div>
+          <button class="modal-container2-button" type="submit">ЗАКРЫТЬ ОКНО
+            <span class="visually-hidden">ЗАКРЫТЬ ОКНО</span>
+          </button>
+        </div>
       </section>
     </div>
   </div>
