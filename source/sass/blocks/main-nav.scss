@@ -1,11 +1,7 @@
 .main-nav {
   width: 100%;
-  background-color: transparent;
+  background-color:#ffffff;
   min-height: 56px;
-
-  @media (min-width: $tablet-width) {
-    background-color:#ffffff;
-  }
 }
 
 .main-nav--opened.main-nav {

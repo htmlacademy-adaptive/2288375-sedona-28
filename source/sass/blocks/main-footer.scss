@@ -84,3 +84,32 @@
     padding-left: 185px;
   }
 }
+
+.main-footer__wrapper-position-index {
+  @media (min-width: $desktop-width) {
+    justify-content: start;
+    padding-top: 0;
+    padding-left: 119px;
+  }
+}
+
+.main-footer__wrapper-position-catalog {
+
+  @media (min-width: $tablet-width) {
+    padding-top: 42px;
+  }
+
+  @media (min-width: $desktop-width) {
+    justify-content: start;
+    padding-top: 77px;
+    padding-left: 119px;
+  }
+}
+
+.main-footer__copyright-position-catalog {
+
+  @media (min-width: $desktop-width) {
+    padding-left: 270px;
+  }
+
+}

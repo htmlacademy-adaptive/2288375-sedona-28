@@ -5,15 +5,15 @@
   text-transform: uppercase;
   color: #000000;
   text-align: center;
+  margin-top: 32px;
 
   @media (min-width: $tablet-width) {
     font-size: 30px;
-    margin-top: 66px;
+    margin-top: 61px;
   }
 
   @media (min-width: $desktop-width) {
-    margin-top: 100px;
-
+    margin-top: 93px;
   }
 }
 
@@ -24,11 +24,20 @@
   text-transform: uppercase;
   color: #333333;
   text-align: center;
+  margin-top: 25px;
+
+  @media (min-width: $tablet-width) {
+    margin-top: 32px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 89px;
+  }
 }
 
 .photo__card {
   position: relative;
-  margin-top: 40px;
+  margin-top: 62px;
 
   @media (min-width: $tablet-width) {
     margin-top: 0;
@@ -61,7 +70,7 @@
   margin-top: 50px;
 
   @media (min-width: $tablet-width) {
-    margin-top: 66px;
+    margin-top: 80px;
   }
 
   @media (min-width: $desktop-width) {
@@ -73,6 +82,7 @@
   padding: 0;
   min-height: 200px;
   list-style: none;
+
 
   @media (min-width: $tablet-width) {
     width: 768px;
@@ -110,7 +120,8 @@
   line-height: 21px;
   text-transform: uppercase;
   color: #000000;
-
+  margin-top: 9px;
+  margin-bottom: 0;
 
   @media (min-width: $tablet-width) {
     margin-bottom: 0;
@@ -119,14 +130,15 @@
   @media (min-width: $desktop-width) {
     color: #FFFFFF;
   }
-
 }
+
 
 .photo__title {
   font-weight: 400;
   font-size: 14px;
   line-height: 21px;
   color: #333333;
+  margin-top: 0px;
 
   @media (min-width: $tablet-width) {
     margin-top: 0;
@@ -142,8 +154,8 @@
   font-size: 14px;
   line-height: 21px;
   color: #000000;
-  margin-top: 2px;
-  margin-left: 10px;
+  margin-top: 4px;
+  margin-left: 14px;
 
   @media (min-width: $desktop-width) {
     color: #FFFFFF;
@@ -153,16 +165,17 @@
 .photo__photo-title-catalog {
   position: relative;
   font-weight: 700;
-  font-size: 21px;
+  font-size: 18px;
   line-height: 26px;
   text-transform: uppercase;
   color: #000000;
   text-align: center;
-  margin-top: 40px;
+  margin-top: 53px;
 
   @media (min-width: $tablet-width) {
     margin-top: 58px;
     font-size: 30px;
+    line-height: 26px;
   }
 
   @media (min-width: $desktop-width) {
@@ -176,7 +189,7 @@
   width: 320px;
   height: 1px;
   left: -20px;
-  top: -24px;
+  top: -18px;
   background-color: #E5E5E5;
 
 
@@ -193,7 +206,11 @@
   text-transform: uppercase;
   color: #333333;
   text-align: center;
-  margin: 38px 5px;
+  margin: 27px 5px 38px;
+
+  @media (min-width: $tablet-width) {
+    margin: 32px 5px 89px;
+  }
 }
 
 .photo__video {
@@ -206,6 +223,7 @@
 .photo-like-wrapper {
   display: flex;
   margin-right: 20px;
+  margin-bottom: -26px;
 
   @media (min-width: $tablet-width) {
     margin-top: 30px;
@@ -229,8 +247,8 @@
     position: absolute;
     background-repeat: no-repeat;
     background-position: center;
-    bottom: -166px;
-    left: 109px;
+    bottom: -154px;
+    left: 111px;
     width: 48px;
     height: 54px;
     background-image: url("../img/play.svg");
@@ -241,7 +259,8 @@
     }
 
     @media (min-width: $desktop-width) {
-      left: 580px;
+      left: 571px;
+      bottom: -367px;
     }
 
 }
@@ -297,6 +316,7 @@
 .photo-info-title {
   @media (min-width: $tablet-width) {
     margin-left: 20px;
+    margin-top: 14px;
   }
 
 }

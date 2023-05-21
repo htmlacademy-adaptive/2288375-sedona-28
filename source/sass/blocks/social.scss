@@ -29,3 +29,9 @@
       padding-left: 145px;
     }
   }
+
+  .social__list-position-catalog {
+    @media (min-width: $desktop-width) {
+      padding-left: 225px
+    }
+  }

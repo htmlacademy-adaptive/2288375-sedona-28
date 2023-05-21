@@ -19,7 +19,7 @@
   }
 
   .impression__title::after {
-    content:  "";
+    content: "";
     position: absolute;
     width: 320px;
     height: 1px;
@@ -28,18 +28,18 @@
     background-color: #E5E5E5;
 
     @media (min-width: $tablet-width) {
-      content:  "";
+      content: "";
       position: absolute;
       width: 123px;
       height: 1px;
-      left: 90px;
+      left: 60px;
       top: 13px;
       background-color: #E5E5E5;
     }
 
     @media (min-width: $desktop-width) {
       width: 280px;
-      left: 140px;
+      left: 123px;
     }
   }
 
@@ -49,14 +49,14 @@
       position: absolute;
       width: 123px;
       height: 1px;
-      left: 550px;
-      top: 13px;
+      left: 585px;
+      top: 12px;
       background-color: #E5E5E5;
     }
 
     @media (min-width: $desktop-width) {
       width: 280px;
-      left: 775px;
+      left: 800px;
     }
   }
 

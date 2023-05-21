@@ -164,17 +164,17 @@ padding-left: 16px;
   @media (min-width: $tablet-width) {
     content:  "";
     position: absolute;
-    width: 320px;
+    width: 340px;
     height: 1px;
-    left: 160px;
-    top: 102px;
+    left: 155px;
+    top: 107px;
     background-color: #E5E5E5;
     margin-top: 53px;
     transform: rotate(90deg)
   }
 
   @media (min-width: $desktop-width) {
-    left: 342px;
+    left: 415px;
   }
 }
 
