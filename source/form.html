@@ -87,9 +87,9 @@
     <section class="hero">
       <h2 class="visually-hidden">Седона</h2>
       <picture>
-        <source srcset="./img/intro.jpg 1x, img/intro@2x.jpg 2x" media="(min-width: 1200px)">
-        <source srcset="./img/intro-tablet.jpg 1x, img/intro-tablet@2x.jpg 2x" media="(min-width: 768px)">
-        <img class="welcome" src="./img/back-mobile.jpg" srcset="./img/back-mobile@2x.jpg 2x"
+        <source srcset="./img/group-deskpre.jpg 1x, img/group-deskpre@2x.jpg 2x" media="(min-width: 1200px)">
+        <source srcset="./img/group-tabpre.jpg 1x, img/group-tabpre@2x.jpg 2x" media="(min-width: 768px)">
+        <img class="welcome hero__position" src="./img/group-mobpre.jpg" srcset="./img/group-mobpre@2x.jpg 2x"
           alt="Welcome To the Gorgeous Sedona Because the Grand Canyon Sucks!">
       </picture>
     </section>
@@ -105,22 +105,27 @@
           <div class=" review__wrapper">
             <div class="review__container">
               <h2 class="review__title">Представьтесь:</h2>
-              <label class="review__label label">ИМЯ*:
+              <label class="review__label label">
+                <span class="review__name-mark">ИМЯ*:</span>
                 <input name="review__name" class="input review__input" value="Пётр" type="text">
               </label>
-              <label class="review__label label">ФАМИЛИЯ*:
+              <label class="review__label label">
+                <span class="review__name-mark">ФАМИЛИЯ*:</span>
                 <input name="review__surname" class="input review__input" value="Пустота" type="text">
               </label>
-              <label class="review__label label">Отчество:
+              <label class="review__label label">
+                <span class="review__name-mark">Отчество:</span>
                 <input name="review__surname-father" class="input review__input" value="Викторович" type="text">
               </label>
             </div>
             <div class="contact">
               <h2 class="contact__title">Контактная информация:</h2>
-              <label class="contact__label contact__label-tel label">Контактный телефон*:
+              <label class="contact__label contact__label-tel label">
+                <span class="contact__tel-position">Контактный телефон*:</span>
                 <input name="contact__info-tel" class="input contact__input" placeholder="Введите телефон" type="tel">
               </label>
-              <label class="contact__label contact__label-email label">Электронная почта*:
+              <label class="contact__label contact__label-email label">
+                <span class="contact__email-position">Электронная почта*:</span>
                 <input name="contact__info-email" class="input contact__input" placeholder="Введите e-mail"
                   type="email">
               </label>
@@ -136,13 +141,13 @@
                   <span class="impression__mark">Скорее положительное</span>
                 </label>
               </li>
-              <li class="impression__filter-item">
+              <li class="impression__filter-item impression__filter-position">
                 <label class="impression__control">
                   <input class="impression__control-input visually-hidden" type="radio" name="mark" value="negative">
                   <span class="impression__mark">Скорее отрицательное</span>
                 </label>
               </li>
-              <li class="impression__filter-item">
+              <li class="impression__filter-item  impression__filter-position2">
                 <label class="impression__control">
                   <input class="impression__control-input visually-hidden" type="radio" name="mark" value="difficulty">
                   <span class="impression__mark">Затрудняюсь ответить</span>
@@ -198,12 +203,12 @@
     </main>
 
     <footer class="main-footer">
-      <div class="main-footer__wrapper">
+      <div class="main-footer__wrapper main-footer__position-form">
         <div class="main-footer__hashtag">
           <h3 class="main-footer__visit">#visitSEDONA</h3>
         </div>
         <div class="main-footer__social social">
-          <ul class="social__list">
+          <ul class="social__list social__list-form-pasition">
             <li class="social__item">
               <a class="social__link social__link--vkontakte" href="https://vk.com/htmlacademy">
                 <span class="visually-hidden">Vkontakte.</span>
@@ -231,7 +236,7 @@
           </li>
         </ul>
       </div>
-      <div class="main-footer__copyright copyright">
+      <div class="main-footer__copyright copyright main-footer__copyright-position">
         <b class="copyright__text">Разработано:</b>
         <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
           <span class="visually-hidden">Сайт HTML Academy.</span>

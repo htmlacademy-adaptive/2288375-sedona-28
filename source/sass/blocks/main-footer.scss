@@ -56,6 +56,31 @@
 .main-footer__social {
   @media (min-width: $desktop-width) {
     min-width: 220px;
-    margin-left: -40px;
+
+  }
+}
+
+.main-footer__position-form {
+@media (min-width: $tablet-width) {
+  margin-top: 68px;
+  justify-content: start;
+  padding-left: 60px;
+}
+
+@media (min-width: $desktop-width) {
+  justify-content: space-around;
+  min-width: 220px;
+  padding-left: 78px;
+}
+}
+
+.main-footer__copyright-position {
+  @media (min-width: $tablet-width) {
+    padding-left: 112px;
+  }
+
+  @media (min-width: $desktop-width) {
+    min-width: 220px;
+    padding-left: 185px;
   }
 }

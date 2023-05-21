@@ -19,3 +19,13 @@
   .social__link--telegram {
     margin-right: 6px;
   }
+
+  .social__list-form-pasition {
+    @media (min-width: $tablet-width) {
+      padding-left: 113px;
+    }
+
+    @media (min-width: $desktop-width) {
+      padding-left: 145px;
+    }
+  }
