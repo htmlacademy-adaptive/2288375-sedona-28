@@ -8,8 +8,8 @@
   justify-content: center;
   flex-wrap: wrap;
   list-style-type: none;
-  margin: 30px auto;
-  padding-left: 15px;
+  margin: 30px auto 23px;
+
   }
 
   .social__link--vkontakte {
@@ -18,4 +18,20 @@
 
   .social__link--telegram {
     margin-right: 6px;
+  }
+
+  .social__list-form-pasition {
+    @media (min-width: $tablet-width) {
+      padding-left: 113px;
+    }
+
+    @media (min-width: $desktop-width) {
+      padding-left: 145px;
+    }
+  }
+
+  .social__list-position-catalog {
+    @media (min-width: $desktop-width) {
+      padding-left: 225px
+    }
   }

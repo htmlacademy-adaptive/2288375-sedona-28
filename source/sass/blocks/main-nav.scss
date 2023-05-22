@@ -1,11 +1,7 @@
 .main-nav {
   width: 100%;
-  background-color: transparent;
+  background-color:#ffffff;
   min-height: 56px;
-
-  @media (min-width: $tablet-width) {
-    background-color:#ffffff;
-  }
 }
 
 .main-nav--opened.main-nav {
@@ -95,10 +91,11 @@
   right: 0;
   z-index: 2;
   border: none;
-  width: 32px;
+  width: 34px;
   height: 32px;
   cursor: pointer;
   background-color: transparent;
+  margin: 13px 14px;
 
   @media (min-width: $tablet-width) {
     display: none;

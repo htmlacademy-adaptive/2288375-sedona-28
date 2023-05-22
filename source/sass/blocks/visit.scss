@@ -1,5 +1,6 @@
 .visit__title {
   position: relative;
+  margin: 0 auto;
   margin-top: 59px;
   font-weight: 700;
   font-size: 18px;
@@ -8,15 +9,14 @@
   text-align: center;
 
   @media (min-width: $tablet-width) {
-    margin-top: 50px;
     width: 308px;
     margin: 0 auto;
-    margin-top: 50px;
+    margin-top: 58px;
     font-size: 21px;
   }
 
   @media (min-width: $desktop-width) {
-    margin-top: 73px;
+    margin-top: 83px;
   }
 }
 
@@ -34,14 +34,14 @@
     position: absolute;
     width: 123px;
     height: 1px;
-    left: -140px;
-    top: 23px;
+    left: -170px;
+    top: 26px;
     background-color: #E5E5E5;
   }
 
   @media (min-width: $desktop-width) {
     width: 280px;
-    left: -310px;
+    left: -325px;
   }
 }
 
@@ -51,14 +51,13 @@
     position: absolute;
     width: 123px;
     height: 1px;
-    left: 320px;
-    top: 23px;
+    left: 355px;
+    top: 26px;
     background-color: #E5E5E5;
   }
 
   @media (min-width: $desktop-width) {
     width: 280px;
-
   }
 }
 
@@ -66,7 +65,7 @@
   font-weight: 700;
   font-size: 18px;
   line-height: 26px;
-  padding-left: 50px;
+  padding-left: 61px;
 }
 
 .visit__control {
@@ -74,23 +73,36 @@
   display: block;
   padding-top: 35px;
   text-align: left;
+
+  @media (min-width: $desktop-width) {
+    padding-top: 66px;
+  }
 }
 
 .visit__filter-list {
   list-style-type: none;
+  margin: 0 auto;
+  padding-left: 21px;
 
   @media (min-width: $tablet-width) {
     display: grid;
     grid-template-columns:224px 224px ;
     width: 668px;
-    justify-content: end;
+    justify-content: start;
+    padding-top: 4px;
+    padding-left: 94px;
+    grid-gap: 32px;
+    grid-auto-rows: 31px;
   }
 
   @media (min-width: $desktop-width) {
     display: grid;
-    grid-template-columns:172px 172px 172px 172px;
+    grid-template-columns: 172px 172px 154px 276px;
     width: 1100px;
     justify-content: space-around;
+    grid-gap: 32px;
+    grid-auto-rows: 31px;
+
   }
 }
 
