@@ -155,7 +155,8 @@
 
 .main-nav--nojs.main-nav {
   position: static;
-
+  background-color: #81B3D2;
+  z-index: 2;
 }
 
 .main-nav--nojs .main-nav__toggle {

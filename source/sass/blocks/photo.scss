@@ -179,7 +179,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    margin-top: 50px;
+    margin-top: 53px;
   }
 }
 
@@ -226,6 +226,7 @@
   margin-bottom: -26px;
 
   @media (min-width: $tablet-width) {
+    margin-right: 17px;
     margin-top: 30px;
   }
 
@@ -254,8 +255,8 @@
     background-image: url("../img/play.svg");
 
     @media (min-width: $tablet-width) {
-      left: 358px;
-      bottom: -326px;
+      left: 356px;
+      bottom: -366px;
     }
 
     @media (min-width: $desktop-width) {
@@ -319,6 +320,10 @@
     margin-top: 14px;
   }
 
+  @media (min-width: $desktop-width) {
+    margin-left: 24px;
+    margin-top: 11px;
+  }
 }
 
 .photo__videow-wrapper {
