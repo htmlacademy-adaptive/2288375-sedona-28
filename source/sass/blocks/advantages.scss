@@ -118,7 +118,7 @@
   vertical-align: bottom;
 }
 
-.advantages__foto-sity--second {
+.advantages__foto-canyon {
   vertical-align: bottom;
 
   @media (min-width: $tablet-width) {
@@ -354,6 +354,10 @@
   left: -23px;
   top: 141px;
   background-color: #E5E5E5;
+
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
 }
 
 .advantages__wrapper-5 {
