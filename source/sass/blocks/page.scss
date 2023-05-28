@@ -3,6 +3,7 @@
   font-size: 14px;
   font-family: "PT Sans", "Arial", sans-serif;
   line-height: 21px;
+  position: relative;
 }
 
 .page__body {
@@ -11,4 +12,6 @@
   background-color: #F2F2F2;
   color: #000000;
   font-family: 'PT Sans', "Arial", sans-serif;
+  z-index: 5;
+  position: relative;
 }

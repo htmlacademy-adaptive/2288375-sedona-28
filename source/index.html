@@ -88,13 +88,13 @@
 
     <main class="main-container">
       <section class="hero">
+        <div class="hero__back">
         <h2 class="visually-hidden">О седоне</h2>
         <picture>
-          <source srcset="./img/intro.jpg 1x, img/intro@2x.jpg 2x" media="(min-width: 1200px)">
-          <source srcset="./img/intro-tablet.jpg 1x, img/intro-tablet@2x.jpg 2x" media="(min-width: 768px)">
-          <img class="welcome" src="./img/back-mobile.jpg" srcset="./img/back-mobile@2x.jpg 2x"
-            alt="Welcome To the Gorgeous Sedona Because the Grand Canyon Sucks!">
+          <source srcset="./img/welcome.svg" media="(min-width: 768px)">
+          <img class="hero__welcome" src="./img/welcome-mobile.svg" alt="Welcome To the Gorgeous Sedona Because the Grand Canyon Sucks!">
         </picture>
+      </div>
       </section>
 
       <h1 class="visually-hidden">Sedona.</h1>
@@ -115,7 +115,7 @@
                   там течёт своя жизнь</p>
               </div>
               <picture>
-                <source srcset="./img/photo-city-desc@1x.jpg 1x, img/photo-city-desc@2x.jpg 2x"
+                <source srcset="./img/photo-city-desktop@1x.jpg 1x, img/photo-city-desktop@2x.jpg 2x"
                   media="(min-width: 1200px)">
                 <source srcset="./img/photo-city-tablet@1x1.jpg 1x, img/photo-city-tablet@2x.jpg 2x"
                   media="(min-width: 768px)">
@@ -127,18 +127,16 @@
               <ul class="services__list">
                 <li class="services__item services__item--housing">
                   <h3 class="services__title">Жилье</h3>
-                  <p class="services__description">Рекомендуем пожить в настоящем <br class="services__desktop-br">
-                    мотеле, всё как в кино!</p>
+                  <p class="services__description">Рекомендуем пожить в настоящем мотеле, всё как в кино!</p>
                 </li>
                 <li class="services__item  services__item--food">
                   <h3 class="services__title">Еда</h3>
-                  <p class="services__description">Всегда заказывайте фирменный бургер, <br
-                      class="services__desktop-br" /> вы не разочаруетесь!</p>
+                  <p class="services__description">Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
                 </li>
                 <li class="services__item  services__item--souvenirs">
                   <h3 class="services__title services__title--souvenirs">Сувениры</h3>
-                  <p class="services__description services__description--souvenirs">Не только китайского, <br
-                      class="services__desktop-br"> но и местного
+                  <p class="services__description services__description--souvenirs">Не только китайского,<br
+                      class="services__desktop-br"> но&nbspи местного
                     производства!</p>
                 </li>
               </ul>
@@ -146,15 +144,14 @@
             <div class="advantages__item advantages__item--width-100">
               <div class="advantages__list-white advantages__list-white--second">
                 <div class="advantages__list-white-desc2 advantages__wrapper-2">
-                  <h3 class="advantages__title">Там есть <br class="advantages__tablet-br"> <br
-                    class="advantages__desktop-br"> мост дьявола</h3>
+                  <h3 class="advantages__title">Там есть мост&nbspдьявола</h3>
                   <p class="advantages__number advantages__number--white">— №2 —</p>
-                  <p class="advantages__description advantages__description--white">Да, по нему можно пройти! <br
-                      class="advantages__desktop-br"> Если вы <br class="advantages__tablet-br"> осмелитесь, конечно</p>
+                  <p class="advantages__description advantages__description--white advantages__position-bridge">Да, по
+                    нему можно пройти! Если вы осмелитесь, конечно</p>
                 </div>
                 <div class="advantages__foto-canyon">
                   <picture>
-                    <source srcset="./img/photo-bridge-desc@1x.jpg 1x, img/photo-bridge-desc@2x.jpg 2x"
+                    <source srcset="./img/photo-bridge-desktop@1x.jpg 1x, img/photo-bridge-desktop@2x.jpg 2x"
                       media="(min-width: 1200px)">
                     <source srcset="./img/photo-bridge-tablet@1x.jpg 1x, img/photo-bridge-tabletx@2x.jpg 2x"
                       media="(min-width: 768px)">
@@ -172,8 +169,7 @@
             <div class="advantages__item advantages__wrapper-4">
               <h3 class="advantages__title">Красивая дорога</h3>
               <p class="advantages__number">— №4 —</p>
-              <p class="advantages__description">Ехать в Седону из Лас-Вегаса совсем <br class="advantages__tablet-br">
-                не скучно!</p>
+              <p class="advantages__description">Ехать в Седону из Лас-Вегаса совсем не&nbspскучно!</p>
             </div>
             <div class="advantages__item advantages__wrapper-5">
               <h3 class="advantages__title">Мало туристов</h3>
@@ -188,8 +184,7 @@
       <section class="search">
         <div class="search__wrapper">
           <h2 class="search__title">Заинтересовались?</h2>
-          <p class="search__description">Укажите предполагаемые даты поездки, <br class="search__tablet-br"> и мы
-            покажем вам лучшие предложения
+          <p class="search__description">Укажите предполагаемые даты поездки, и&nbspмы&nbspпокажем&nbspвам&nbspлучшие предложения
             гостиниц
             в Седоне</p>
         </div>
@@ -201,7 +196,7 @@
           width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
           referrerpolicy="no-referrer-when-downgrade"></iframe>
         <picture>
-          <source srcset="./img/map-desc.jpg 1x, img/map-desc2x.jpg 2x" media="(min-width: 1200px)">
+          <source srcset="./img/map-desktop.jpg 1x, img/map-desktop2x.jpg 2x" media="(min-width: 1200px)">
           <source srcset="./img/map-tablet.jpg 1x, img/map-tablet@2x.jpg 2x" media="(min-width: 768px)">
           <img class="map__image" src="./img/map-mobile.jpg" srcset="./img/map-mobile@2.jpg 2x" alt="карта.">
         </picture>

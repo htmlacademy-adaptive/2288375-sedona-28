@@ -6,7 +6,7 @@
   color: #000000;
   width: 284px;
   margin: auto;
-  margin: 28px 4px 9px 17px;
+  margin: 34px 4px 9px 17px;
   // margin-top: 34px;
   padding: 0 10px;
 
@@ -19,7 +19,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    margin-top: 54px;
+    margin-top: 60px;
   }
 }
 
@@ -245,29 +245,6 @@
   }
 }
 
-.advantages__tablet-br {
-  display: none;
-
-  @media (min-width: $tablet-width) {
-    display: inline;
-  }
-
-  @media (min-width: $desktop-width) {
-    display: none;
-  }
-}
-
-.advantages__desktop-br {
-  display: none;
-
-  @media (min-width: $tablet-width) {
-    display: none;
-  }
-
-  @media (min-width: $desktop-width) {
-    display: inline;
-  }
-}
 
 .advantages__wrapper-1 {
   padding: 54px 16px 0;
@@ -382,3 +359,8 @@
   margin-bottom: 27px;
 }
 
+.advantages__position-bridge {
+  @media (min-width: $desktop-width) {
+    padding: 23px 35px 0;
+  }
+}

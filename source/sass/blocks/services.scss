@@ -61,7 +61,7 @@
 
   @media (min-width: $desktop-width) {
     margin: 0 -1px;
-}
+  }
 }
 
 .services__item--food::after {
@@ -89,7 +89,7 @@
 
   @media (min-width: $desktop-width) {
     margin: 7px auto;
-}
+  }
 }
 
 .services__item--souvenirs {
@@ -100,7 +100,7 @@
   }
   @media (min-width: $desktop-width) {
     margin: 7px auto;
-}
+  }
 }
 
 .services__item--souvenirs::after {
@@ -150,12 +150,19 @@
   @media (min-width: $tablet-width) {
     text-align: center;
     margin-top: 23px;
+  }
 
+  @media (min-width: $desktop-width) {
+    padding: 0 30px;
   }
 }
 
 .services__description--souvenirs {
   padding-bottom: 37px;
+
+  @media (min-width: $desktop-width) {
+    padding: 0 47px 37px;
+  }
 }
 
 .services__item {
