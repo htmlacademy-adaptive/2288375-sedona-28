@@ -50,22 +50,24 @@
 
 .hero__back::before {
   content: "";
-  background-image: url("../img/intro-triangle.svg");
+  background-image: url("../img/group-mobie3.svg");
   background-repeat: no-repeat;
   background-size: auto;
   width: 1200px;
   height: 57px;
   position: absolute;
   top: 332px;
-  left: -439px;
+  left: 0;
 
 
   @media (min-width: $tablet-width){
-
+    background-image: url("../img/group-tablet3.svg");
+    top: 461px;
   }
 
   @media (min-width: $desktop-width) {
     top: 462px;
     left: 0;
+    background-image: url("../img/intro-triangle.svg");
   }
 }

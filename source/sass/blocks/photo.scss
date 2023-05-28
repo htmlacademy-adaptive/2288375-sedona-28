@@ -5,15 +5,15 @@
   text-transform: uppercase;
   color: #000000;
   text-align: center;
-  margin-top: 32px;
+  margin-top: 36px;
 
   @media (min-width: $tablet-width) {
     font-size: 30px;
-    margin-top: 61px;
+    margin-top: 67px;
   }
 
   @media (min-width: $desktop-width) {
-    margin-top: 99px;
+    margin-top: 97px;
   }
 }
 
