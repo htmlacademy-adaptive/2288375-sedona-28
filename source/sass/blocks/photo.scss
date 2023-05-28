@@ -5,15 +5,15 @@
   text-transform: uppercase;
   color: #000000;
   text-align: center;
-  margin-top: 32px;
+  margin-top: 36px;
 
   @media (min-width: $tablet-width) {
     font-size: 30px;
-    margin-top: 61px;
+    margin-top: 67px;
   }
 
   @media (min-width: $desktop-width) {
-    margin-top: 93px;
+    margin-top: 97px;
   }
 }
 
@@ -28,10 +28,12 @@
 
   @media (min-width: $tablet-width) {
     margin-top: 32px;
+    padding: 0 167px;
   }
 
   @media (min-width: $desktop-width) {
     margin-bottom: 89px;
+    padding: 0 380px;
   }
 }
 
@@ -210,6 +212,11 @@
 
   @media (min-width: $tablet-width) {
     margin: 32px 5px 89px;
+    padding: 0 150px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 0 370px;
   }
 }
 
@@ -264,16 +271,6 @@
       bottom: -367px;
     }
 
-}
-
-.photo__tablet-br {
-  display: none;
-
-
-
-  @media (min-width: $tablet-width) {
-    display: inline;
-  }
 }
 
 .photo-info-wrapper {
