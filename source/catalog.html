@@ -10,11 +10,13 @@
   <link rel="icon" href="img/favicons/favicon-32x32.png" type="image/png+xml">
   <link rel="apple-touch-icon" href="img/favicons/apple-icon-180x180.png"> <!-- 180×180 -->
   <link rel="manifest" href="manifest.webmanifest">
+  <link rel="preload" href="fonts/ptsans.woff2" as="font">
+  <link rel="preload" href="fonts/ptsansbold.woff2" as="font">
 </head>
 
 <body class="page__body">
 
-  <svg style="display: none">
+  <svg style="display: none;">
     <symbol>
       <svg width="48" height="48" viewBox="0 0 48 48" id="icon-vk" fill="none" xmlns="http://www.w3.org/2000/svg">
         <rect width="48" height="48" fill="#81B3D2" />
@@ -223,7 +225,9 @@
                 <source srcset="./img/video-tablet.jpg" media="(min-width: 748px)">
                 <img class="photo__video" src="./img/video-mobile.jpg" alt="Видео седона">
               </picture>
-              <button class="photo__play visually-hidden" type="button"></button>
+              <button class="photo__play" type="button">
+                <span class="visually-hidden">Воспроизвести.</span>
+              </button>
             </div>
           </div>
         </div>
@@ -240,7 +244,7 @@
             <li class="social__item">
               <a class="social__link social__link--vkontakte" href="https://vk.com/htmlacademy">
                 <span class="visually-hidden">Vkontakte.</span>
-                <svg class="social__link__icon-vk" width="48" height="48">
+                <svg class="social__link-icon-vk" width="48" height="48">
                   <use xlink:href="#icon-vk">
                   </use>
                 </svg>
@@ -249,7 +253,7 @@
             <li class="social__item">
               <a class="social__link social__link--telegram" href="https://t.me/htmlacademy">
                 <span class="visually-hidden">Telegram.</span>
-                <svg class="social__link__icon-telegramm" width="48" height="48">
+                <svg class="social__link-icon-telegramm" width="48" height="48">
                   <use xlink:href="#icon-telegramm">
                   </use>
                 </svg>
@@ -258,7 +262,7 @@
             <li class="social__item">
               <a class="social__link social__link--youtube" href="https://www.youtube.com/user/htmlacademyru">
                 <span class="visually-hidden">Youtube.</span>
-                <svg class="social__link__icon-youtube" width="48" height="48">
+                <svg class="social__link-icon-youtube" width="48" height="48">
                   <use xlink:href="#icon-youtube">
                   </use>
                 </svg>
@@ -270,7 +274,7 @@
           <b class="copyright__text">Разработано:</b>
           <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
             <span class="visually-hidden">Сайт HTML Academy.</span>
-            <svg class="copyright__link__icon-html-academy" width="27" height="35">
+            <svg class="copyright__link-icon-html-academy" width="27" height="35">
               <use xlink:href="#icon-html-academy">
               </use>
             </svg>

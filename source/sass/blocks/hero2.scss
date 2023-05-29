@@ -14,7 +14,7 @@
   position: relative;
   color: #000000;
   background-color: #3F5E72;
-  background-image: url("../../img/hero-mobile.jpg");
+  background-image: url("../img/hero-mobile.jpg");
   background-size: 100% auto, cover;
   background-repeat: no-repeat;
   text-align: center;
@@ -48,10 +48,10 @@
     margin-top: -55px;
 
 
-  @media (min-resolution: 2dppx) {
-    background-image: url("../img/hero-desctop@2x.jpg");
-    background-size: 1200px auto;
-      }
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/hero-desctop@2x.jpg");
+      background-size: 1200px auto;
+    }
   }
 }
 
@@ -77,4 +77,3 @@
     top: 301px;
   }
 }
-

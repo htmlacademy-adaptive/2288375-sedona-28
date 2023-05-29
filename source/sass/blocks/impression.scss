@@ -1,150 +1,149 @@
-  .impression__title {
-    margin-top: 60px;
-    position: relative;
-    font-weight: 700;
-    font-size: 18px;
-    line-height: 26px;
-    text-transform: uppercase;
-    text-align: center;
-    margin-bottom: 0;
+.impression__title {
+  margin-top: 60px;
+  position: relative;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 26px;
+  text-transform: uppercase;
+  text-align: center;
+  margin-bottom: 0;
 
-    @media (min-width: $tablet-width) {
-      margin-top: 66px;
-      font-size: 21px;
-    }
-
-    @media (min-width: $desktop-width) {
-      margin-top: 75px;
-    }
+  @media (min-width: $tablet-width) {
+    margin-top: 66px;
+    font-size: 21px;
   }
 
-  .impression__title::after {
-    content: "";
-    position: absolute;
-    width: 320px;
-    height: 1px;
-    left: 0;
-    bottom: 52px;
-    background-color: #E5E5E5;
-
-    @media (min-width: $tablet-width) {
-      content: "";
-      position: absolute;
-      width: 123px;
-      height: 1px;
-      left: 60px;
-      top: 13px;
-      background-color: #E5E5E5;
-    }
-
-    @media (min-width: $desktop-width) {
-      width: 280px;
-      left: 123px;
-    }
+  @media (min-width: $desktop-width) {
+    margin-top: 75px;
   }
-
-  .impression__title::before {
-    @media (min-width: $tablet-width) {
-      content:  "";
-      position: absolute;
-      width: 123px;
-      height: 1px;
-      left: 585px;
-      top: 12px;
-      background-color: #E5E5E5;
-    }
-
-    @media (min-width: $desktop-width) {
-      width: 280px;
-      left: 800px;
-    }
-  }
-
-  .impression__control {
-    position: relative;
-    display: block;
-  }
-
-  .impression__mark {
-    font-weight: 700;
-    font-size: 18px;
-    line-height: 26px;
-    padding-left: 42px;
-    text-align: left;
-  }
-  .impression__mark::before {
-    content: "";
-    position: absolute;
-    bottom: -7px;
-    left: -20px;
-    width: 46px;
-    height: 46px;
-    border: none;
-    background-color: #F2F2F2;
-    border-radius: 50%;
-  }
-
-  .impression__mark::after {
-    display: none;
-    content: "";
-    position: absolute;
-    top: 2px;
-    left: -5px;
-    width: 16px;
-    height: 16px;
-    border: none;
-    background-color: #333333;
-    border-radius: 50%;
-  }
-
-  .impression__filter-item {
-    padding-top: 34px;
-
-    @media (min-width: $tablet-width) {
-      padding-top: 37px;
-      padding-left: 9px;
-    }
-  }
-
-  .impression__filter-position {
-    @media (min-width: $tablet-width) {
-      padding-left: 24px;
-    }
-  }
-
-  .impression__filter-position2 {
-    @media (min-width: $desktop-width) {
-      padding-left: 45px;
-    }
-  }
-
-  .impression__control-mark:hover {
-  }
-
-
-  .impression__filter-list {
-    margin: 0 auto;
-    list-style-type: none;
-
-    @media (min-width: $tablet-width) {
-      display: grid;
-      grid-template-columns:280px 280px ;
-      width: 668px;
-      justify-content: start;
-      padding-left: 58px;
-    }
-
-    @media (min-width: $desktop-width) {
-      display: grid;
-      grid-template-columns:280px 280px 280px;
-      width: 1100px;
-      padding-left: 135px;
-      grid-gap: 10px;
-      padding-top: 19px;
-    }
-  }
-
-.impression__control-input:checked + .impression__mark::after{
-display: block;
 }
 
+.impression__title::after {
+  content: "";
+  position: absolute;
+  width: 320px;
+  height: 1px;
+  left: 0;
+  bottom: 52px;
+  background-color: #E5E5E5;
+
+  @media (min-width: $tablet-width) {
+    content: "";
+    position: absolute;
+    width: 123px;
+    height: 1px;
+    left: 60px;
+    top: 13px;
+    background-color: #E5E5E5;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 280px;
+    left: 123px;
+  }
+}
+
+.impression__title::before {
+  @media (min-width: $tablet-width) {
+    content:  "";
+    position: absolute;
+    width: 123px;
+    height: 1px;
+    left: 585px;
+    top: 12px;
+    background-color: #E5E5E5;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 280px;
+    left: 800px;
+  }
+}
+
+.impression__control {
+  position: relative;
+  display: block;
+}
+
+.impression__mark {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 26px;
+  padding-left: 42px;
+  text-align: left;
+}
+.impression__mark::before {
+  content: "";
+  position: absolute;
+  bottom: -7px;
+  left: -20px;
+  width: 46px;
+  height: 46px;
+  border: none;
+  background-color: #F2F2F2;
+  border-radius: 50%;
+}
+
+.impression__mark::after {
+  display: none;
+  content: "";
+  position: absolute;
+  top: 2px;
+  left: -5px;
+  width: 16px;
+  height: 16px;
+  border: none;
+  background-color: #333333;
+  border-radius: 50%;
+}
+
+.impression__filter-item {
+  padding-top: 34px;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 37px;
+    padding-left: 9px;
+  }
+}
+
+.impression__filter-position {
+  @media (min-width: $tablet-width) {
+    padding-left: 24px;
+  }
+}
+
+.impression__filter-position2 {
+  @media (min-width: $desktop-width) {
+    padding-left: 45px;
+  }
+}
+
+.impression__control-mark:hover {
+}
+
+
+.impression__filter-list {
+  margin: 0 auto;
+  list-style-type: none;
+
+  @media (min-width: $tablet-width) {
+    display: grid;
+    grid-template-columns:280px 280px ;
+    width: 668px;
+    justify-content: start;
+    padding-left: 58px;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: grid;
+    grid-template-columns:280px 280px 280px;
+    width: 1100px;
+    padding-left: 135px;
+    grid-gap: 10px;
+    padding-top: 19px;
+  }
+}
+
+.impression__control-input:checked + .impression__mark::after{
+  display: block;
+}

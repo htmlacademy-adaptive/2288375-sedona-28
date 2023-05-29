@@ -94,16 +94,16 @@
 }
 
 .contact__label-tel::after {
-    content: "";
-    position: absolute;
-    background-repeat: no-repeat;
-    background-position: center;
-    bottom: 0;
-    right: 0;
-    width: 58px;
-    height: 58px;
-    background-image: url("../img/tel.svg");
-    z-index: 2;
+  content: "";
+  position: absolute;
+  background-repeat: no-repeat;
+  background-position: center;
+  bottom: 0;
+  right: 0;
+  width: 58px;
+  height: 58px;
+  background-image: url("../img/tel.svg");
+  z-index: 2;
 }
 
 .contact__label-email {
@@ -122,4 +122,3 @@
   background-image: url("../img/male.svg");
   z-index: 2;
 }
-
