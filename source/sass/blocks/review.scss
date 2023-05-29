@@ -94,17 +94,17 @@
 }
 
 .review__input {
-width: 280px;
-height: 58px;
-padding-left: 16px;
+  width: 280px;
+  height: 58px;
+  padding-left: 16px;
 
-@media (min-width: $tablet-width) {
-  width: 295px;
-}
+  @media (min-width: $tablet-width) {
+    width: 295px;
+  }
 
-@media (min-width: $desktop-width) {
-  width: 430px;
-}
+  @media (min-width: $desktop-width) {
+    width: 430px;
+  }
 }
 
 .review__description {

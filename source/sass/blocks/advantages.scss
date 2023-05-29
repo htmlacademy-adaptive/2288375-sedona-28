@@ -5,7 +5,6 @@
   text-transform: uppercase;
   color: #000000;
   width: 284px;
-  margin: auto;
   margin: 34px 4px 9px 17px;
   padding: 0 10px;
 
@@ -291,17 +290,17 @@
 }
 
 .advantages__wrapper-3::after {
-    content: "";
-    position: absolute;
-    width: 284px;
-    height: 1px;
-    left: -9px;
-    top: 164px;
-    background-color: #E5E5E5;
+  content: "";
+  position: absolute;
+  width: 284px;
+  height: 1px;
+  left: -9px;
+  top: 164px;
+  background-color: #E5E5E5;
 
-    @media (min-width: $tablet-width) {
-      display: none;
-    }
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
 }
 
 .advantages__wrapper-4 {
